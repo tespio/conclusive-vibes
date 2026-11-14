@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="theme-color" content="#05070a"/>
+<title>Checkpoint Forensics, Audited — an interactive teardown</title>
+<meta name="description" content="A working reproduction of the '1,385-sigma Blackwell' checkpoint forensics claim, and the three places where it stops being evidence."/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2305070a'/%3E%3Crect x='6' y='6' width='8' height='8' fill='%235fe3ff'/%3E%3Crect x='18' y='6' width='8' height='8' fill='%23ffb020'/%3E%3Crect x='6' y='18' width='8' height='8' fill='%23ff4767'/%3E%3Crect x='18' y='18' width='8' height='8' fill='%235fe3ff'/%3E%3C/svg%3E"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<div id="webgl" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<header class="hud">
+  <div class="hud__brand">
+    <span class="hud__dot"></span>
+    <span>CHECKPOINT&nbsp;FORENSICS</span>
+    <span class="hud__sep">/</span>
+    <span class="hud__muted">AUDIT</span>
+  </div>
+  <div class="hud__right">
+    <div class="hud__counter" id="hudCounter" title="Every experiment on this page ran with zero Blackwell GPUs">
+      <span class="hud__label">BLACKWELLS&nbsp;REQUIRED</span>
+      <span class="hud__digits" id="counterDigits">0000</span>
+    </div>
+    <div class="hud__idx"><b id="idxNum">00</b><span>&nbsp;/&nbsp;06</span></div>
+  </div>
+</header>
+
+<nav class="rail" id="rail" aria-label="Sections"></nav>
+
+<main>
+
+  <!-- ============================================================ 00 HERO -->
+  <section class="section section--hero" id="s-hero" data-scene="hero" data-label="Opening">
+    <div class="hero">
+      <div class="kicker">An interactive audit · six exhibits</div>
+      <h1>The fingerprint<br/>that fits on a <em>laptop.</em></h1>
+      <p class="lede">A working reproduction of the “1,385σ Blackwell” checkpoint-forensics claim —
+        and the three places where it stops being evidence. Every number on this page was produced
+        by the audit code in <a href="../poc/run_all.py" data-view="code" data-title="poc/run_all.py">poc/</a>,
+        on the test machine — an RTX&nbsp;4070&nbsp;Ti&nbsp;SUPER — or on no GPU at all.</p>
+      <div class="hero__stats">
+        <div class="stat">
+          <b>10,244,352</b>
+          <span>parameters reproduced bit-exactly on a CPU</span>
+        </div>
+        <div class="stat">
+          <b>256&thinsp;/&thinsp;256</b>
+          <span>bit-exact match for a forged “GB200” checkpoint</span>
+        </div>
+        <div class="stat">
+          <b>1</b>
+          <span>optimizer step needed to erase the fingerprint</span>
+        </div>
+      </div>
+      <div class="scrollcue"><a href="#s-mech"><span class="scrollcue__line"></span> scroll to audit</a></div>
+    </div>
+  </section>
+
+  <!-- ========================================================== 01 MECHANISM -->
+  <section class="section" id="s-mech" data-scene="integer" data-label="The mechanism">
+    <div class="panel">
+      <div class="kicker">01 · The mechanism</div>
+      <h2>The GPU fingerprint is one integer.</h2>
+      <p>PyTorch’s CUDA random-number kernels size their launch grid from two device
+        properties — and that grid is the <em>only</em> way the hardware enters the random stream.
+        Reproduce the grid, and you reproduce the “fingerprint”, on anything.</p>
+      <div class="formula">grid = min( ceil(N/256) , SMs × (threads_per_SM / 256) )</div>
+      <p class="small">Click a device — the wall, the barcode and the number all change.</p>
+      <div class="devices" id="devices">
+        <button class="dev" data-key="a100" data-sm="108" data-bps="8" data-name="A100 80GB"
+                data-note="a smaller grid, a different fingerprint">
+          <span>A100 80GB</span><span class="sm">108 SMs</span><b>864</b>
+        </button>
+        <button class="dev" data-key="h100" data-sm="132" data-bps="8" data-name="H100 / H200"
+                data-note="identical to the H200 — the method cannot tell them apart">
+          <span>H100 / H200</span><span class="sm">132 SMs</span><b>1056</b>
+        </button>
+        <button class="dev is-active" data-key="gb200" data-sm="148" data-bps="8" data-name="B200 / GB200"
+                data-note="the entire information content of “GB200”">
+          <span>B200 / GB200</span><span class="sm">148 SMs</span><b>1184</b>
+        </button>
+        <button class="dev" data-key="b300" data-sm="152" data-bps="8" data-name="B300 / GB300"
+                data-note="one integer away from “GB200”, and a different rack">
+          <span>B300 / GB300</span><span class="sm">152 SMs</span><b>1216</b>
+        </button>
+        <button class="dev" data-key="rtx4070tis" data-sm="66" data-bps="6" data-name="RTX 4070 Ti SUPER"
+                data-note="the test machine that forged the checkpoint">
+          <span>RTX 4070 Ti SUPER <i>· test machine</i></span><span class="sm">66 SMs</span><b>396</b>
+        </button>
+      </div>
+      <div class="gridnote">
+        <div class="gridnote__row"><b id="gridNum">1,184</b><span id="gridEq">= 148 × 8</span></div>
+        <div class="gridnote__cap" id="gridCap">B200 / GB200 · the entire information content of “GB200”</div>
+      </div>
+      <div class="barcode-block">
+        <div class="barcode-block__head"><span id="bcSms">148 SMs</span><span id="bcCells">× 8 blocks/SM = 1,184 cells</span></div>
+        <canvas id="barcode" width="760" height="68"></canvas>
+        <div class="barcode-block__cap">Every “hardware fingerprint” his method can read is one of these cells.</div>
+      </div>
+      <p class="fine">The first 101,376 values of the Ada stream and the GB200 stream are identical.
+        They diverge only where the launch-grid cap begins to bite.</p>
+    </div>
+  </section>
+
+  <!-- ============================================================= 02 FORGERY -->
+  <section class="section" id="s-forge" data-scene="forge" data-label="The forgery">
+    <div class="panel">
+      <div class="kicker">02 · The forgery</div>
+      <h2>We minted a Blackwell checkpoint on the CPU.</h2>
+      <p>The forensic method is a faithful reimplementation: brute-force the seed and the launch
+        grid, regenerate the initialization, count bit-exact values. It is <em>perfect</em> on
+        step-0 data — including data generated by NumPy three seconds ago.</p>
+      <div class="row">
+        <button class="btn" id="forgeBtn">Forge a GB200 checkpoint</button>
+        <button class="btn btn--ghost" id="resetBtn" disabled>reset</button>
+      </div>
+      <div class="term" id="term" aria-live="polite"><pre id="termPre"><span class="dim">$ waiting for you to commit a crime against epistemology…</span></pre></div>
+      <div class="receipt">
+        <div><span>hardware used</span><b>0 GPUs</b></div>
+        <div><span>wall time</span><b>3.03 s</b></div>
+        <div><span>verdict</span><b class="amber" id="receiptVerdict">—</b></div>
+      </div>
+      <label class="switch">
+        <input type="checkbox" id="truthToggle"/>
+        <span>show ground truth</span>
+      </label>
+      <p class="truth" id="truth">Test machine: <b>RTX 4070 Ti SUPER</b> · Ada · 66 SMs · 16&nbsp;GB · <b>0 Blackwells</b>.
+        The forged checkpoint is bit-identical to what a 148-SM device would emit — because the only
+        difference is the integer 1184.</p>
+    </div>
+    <div class="stamp" id="stamp" aria-hidden="true">CERTIFIED<br/>GB200<span>256 / 256 · CONCLUSIVE</span></div>
+  </section>
+
+  <!-- ============================================================== 03 DECAY -->
+  <section class="section" id="s-decay" data-scene="decay" data-label="The training">
+    <div class="panel">
+      <div class="kicker">03 · The training</div>
+      <h2>One optimizer step and it’s gone.</h2>
+      <p>A real 10.2M-parameter transformer, initialized <em>on the GPU</em>, trained with AdamW.
+        Drag the slider and watch the fraction of parameters that are still bit-identical to step&nbsp;0.</p>
+      <div class="control">
+        <div class="control__head">
+          <span>optimizer steps</span>
+          <output id="stepOut">0</output>
+        </div>
+        <input type="range" id="stepSlider" min="0" max="10" step="1" value="0"
+               aria-label="Training steps"/>
+        <div class="presets" id="stepPresets">
+          <button data-step="0">0</button>
+          <button data-step="1">1</button>
+          <button data-step="2">2</button>
+          <button data-step="6">50</button>
+          <button data-step="10">600</button>
+        </div>
+      </div>
+      <div class="readouts">
+        <div><b id="rExact">100.000%</b><span>bit-identical to step 0</span></div>
+        <div><b id="rCos">1.000000</b><span>cosine similarity</span></div>
+        <div><b id="rSigma">∞</b><span>reported “sigma”</span></div>
+        <div><b id="rDetect" class="ok">256/256</b><span>detector match</span></div>
+      </div>
+      <p class="note" id="decayNote">Step 0 is the only moment his “bit-for-bit” claim is even
+        well-defined. It is also the one checkpoint no lab ever publishes.</p>
+    </div>
+  </section>
+
+  <!-- ============================================================== 04 SIGMA -->
+  <section class="section" id="s-sigma" data-scene="sigma" data-label="The statistics">
+    <div class="panel panel--wide">
+      <div class="kicker">04 · The statistics</div>
+      <h2>1,385σ and 0.999995 cannot both be true.</h2>
+      <p>Significance grows with sample count: <code>z = r·√N / √(1−r²)</code>. A correlation of
+        0.999995 over a billion weights is ~10<sup>7</sup>σ. To get 1,385σ at that correlation you
+        need about <b>19</b> independent samples. The two headline numbers are not measurements of
+        the same thing.</p>
+      <div class="calc">
+        <label class="calc__row">
+          <span>correlation&nbsp;r</span>
+          <input type="range" id="rSlider" min="990000" max="1000000" step="1" value="999995"/>
+          <output id="rOut">0.999995</output>
+        </label>
+        <label class="calc__row">
+          <span>weights&nbsp;N</span>
+          <input type="range" id="nSlider" min="1" max="12" step="0.05" value="9"/>
+          <output id="nOut">10⁹</output>
+        </label>
+        <div class="calc__result">
+          <b id="zOut">10,000,000σ</b>
+          <span id="zNote">his 0.999995, applied to 10⁹ weights</span>
+        </div>
+        <div class="presets">
+          <button id="presetHis">his 0.999995 @ 10⁹</button>
+          <button id="presetForce">force 1,385σ</button>
+        </div>
+      </div>
+      <canvas id="sigmaChart" height="240"></canvas>
+      <p class="fine">His reported range, 49–1,385σ, sits below the 369,435σ our RTX-4070-initialized
+        model produces after a single optimizer step. The number measures sample size and distance
+        from init — not hardware.</p>
+    </div>
+  </section>
+
+  <!-- =============================================================== 05 COST -->
+  <section class="section" id="s-cost" data-scene="cost" data-label="The inference">
+    <div class="panel">
+      <div class="kicker">05 · The inference</div>
+      <h2>Init is not training. It costs about a hundred dollars.</h2>
+      <p>Initialization is a one-time, I/O-bound step every training run performs anyway.
+        Moving it to rented Blackwell hardware is a cloud invoice, not a smuggling operation —
+        and it leaves exactly the fingerprint he describes.</p>
+      <div class="cards">
+        <div class="card"><b>$50–150</b><span>one rented 8-GPU Blackwell node, one hour</span></div>
+        <div class="card"><b>0</b><span>Blackwells a lab needs to own</span></div>
+        <div class="card"><b>$0</b><span>marginal cost if you were initialising anyway</span></div>
+      </div>
+      <blockquote>“do not establish the physical location of the chips, how they were acquired,
+        or whether export control regulations were violated”
+        <cite>— the report’s own executive summary</cite></blockquote>
+      <p>A layout match is consistent with a legal rented node, a partner lab, a cloud region,
+        a deliberate decoy, a stale config, or a genuinely smuggled cluster. It cannot tell them
+        apart. That is not a forensic result; it is a Rorschach test with a p-value.</p>
+    </div>
+  </section>
+
+  <!-- ============================================================== 06 OUTRO -->
+  <section class="section section--outro" id="s-outro" data-scene="outro" data-label="The point">
+    <div class="outro">
+      <div class="kicker">06 · The point</div>
+      <h2>A PRNG can be made<br/>to say <em>anything.</em></h2>
+      <p>Every number on this page came from the audit code in
+        <a href="../poc/run_all.py" data-view="code" data-title="poc/run_all.py">poc/</a>, running on the test
+        machine — an RTX 4070 Ti SUPER — or on no GPU at all. The “smoking gun” took three seconds and cost
+        nothing. The training cluster it supposedly proves was never observed.</p>
+      <div class="outro__links">
+        <a href="../REPORT.md" data-view="report" data-title="Checkpoint Forensics, Audited">full report ↗</a>
+        <a href="../poc/run_all.py" data-view="code" data-title="poc/run_all.py">reproduce ↗</a>
+        <a href="../figures/fig1_audit.png" data-view="image" data-title="fig1_audit.png">audit figure ↗</a>
+      </div>
+      <div class="outro__foot">0 Blackwells required · seed 424242 · 256/256 · 3.03 s</div>
+    </div>
+  </section>
+
+</main>
+
+<noscript><div class="noscript">This page needs JavaScript and WebGL. The full written audit is in <a href="../REPORT.md">REPORT.md</a>.</div></noscript>
+
+<button class="totop" id="toTop" type="button" aria-label="Back to top">
+  <span class="totop__arrow" aria-hidden="true">↑</span>
+  <span class="totop__label">top</span>
+</button>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modalTitle">
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__panel">
+    <header class="modal__bar">
+      <div class="modal__heading">
+        <span class="modal__kind" id="modalKind">document</span>
+        <h2 class="modal__title" id="modalTitle">Viewer</h2>
+      </div>
+      <div class="modal__actions">
+        <button class="modal__btn" id="modalCopy" type="button" hidden>copy</button>
+        <a class="modal__btn" id="modalDownload" href="#" download hidden>download</a>
+        <button class="modal__close" type="button" data-close aria-label="Close viewer">✕</button>
+      </div>
+    </header>
+    <div class="modal__body" id="modalBody"></div>
+  </div>
+</div>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>

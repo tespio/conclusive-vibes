@@ -1,0 +1,103 @@
+{
+  "detector_gpu": {
+    "best": {
+      "profile": "RTX 4070 Ti SUPER",
+      "seed": 424242,
+      "matches": 256
+    },
+    "n_probe": 256,
+    "n_candidates": 160000,
+    "elapsed_s": 15.978994607925415,
+    "candidates_per_s": 10013.145628113652,
+    "per_profile": {
+      "RTX 4070 Ti SUPER": {
+        "best_matches": 256,
+        "best_seed": 424242
+      },
+      "H100 SXM": {
+        "best_matches": 1,
+        "best_seed": 432146
+      },
+      "GB200 (per GPU)": {
+        "best_matches": 1,
+        "best_seed": 411809
+      },
+      "B300/GB300": {
+        "best_matches": 1,
+        "best_seed": 426012
+      }
+    },
+    "conclusive": true,
+    "tensor": "tok_emb.weight"
+  },
+  "detector_forged": {
+    "best": {
+      "profile": "GB200 (per GPU)",
+      "seed": 424242,
+      "matches": 256
+    },
+    "n_probe": 256,
+    "n_candidates": 160000,
+    "elapsed_s": 16.314898252487183,
+    "candidates_per_s": 9806.987302271911,
+    "per_profile": {
+      "RTX 4070 Ti SUPER": {
+        "best_matches": 1,
+        "best_seed": 422894
+      },
+      "H100 SXM": {
+        "best_matches": 0,
+        "best_seed": 404242
+      },
+      "GB200 (per GPU)": {
+        "best_matches": 256,
+        "best_seed": 424242
+      },
+      "B300/GB300": {
+        "best_matches": 0,
+        "best_seed": 404242
+      }
+    },
+    "conclusive": true,
+    "tensor": "tok_emb.weight"
+  },
+  "truth": "RTX 4070 Ti SUPER (66 SMs), zero Blackwells present",
+  "forgery": {
+    "n_params": 10244352,
+    "gen_seconds": 3.034215211868286,
+    "digest": "91e92dd46b31f01bcd5e99a7f1f4a11946c01f617575b5138941c799dee47129",
+    "digest_gpu": "77a876a1e8937749aba2f20fb399af3a3583fe82739fc67442e984541f0c4cba",
+    "identical_to_gpu_stream": 101376
+  },
+  "forged_variants": {
+    "h100": {
+      "gen_seconds": 4.118924379348755,
+      "verdict": {
+        "profile": "H100 SXM",
+        "seed": 424242,
+        "matches": 256
+      },
+      "conclusive": true
+    },
+    "b300": {
+      "gen_seconds": 4.003812313079834,
+      "verdict": {
+        "profile": "B300/GB300",
+        "seed": 424242,
+        "matches": 256
+      },
+      "conclusive": true
+    }
+  },
+  "scale": {
+    "values_per_s": 3320062.620676499,
+    "big_n": 32000000,
+    "seconds": 9.638372421264648
+  },
+  "deepseek_seed_demo": {
+    "seed": 953049583,
+    "grid": 1184,
+    "sha256": "bdf9435e5180f4915bbd55292ec6fd50c228cbb587052e8b93faef5692da400f",
+    "n": 32000000
+  }
+}

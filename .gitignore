@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+_site/
+tools/
+shots*/
+results/*.npz
+.chrome-*/
+.DS_Store
+Thumbs.db

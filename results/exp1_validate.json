@@ -1,0 +1,803 @@
+{
+  "whole_model": {
+    "total": 10244352,
+    "exact": 10244352,
+    "n_tensors": 52,
+    "seed": 424242,
+    "profile": "RTX 4070 Ti SUPER(sm=66, thr/sm=1536, cap=396)"
+  },
+  "tensors": [
+    {
+      "name": "tok_emb.weight",
+      "numel": 1572864,
+      "exact": 1572864,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.0.ln1.weight",
+      "numel": 384,
+      "exact": 384,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.0.ln1.bias",
+      "numel": 384,
+      "exact": 384,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.0.attn.qkv.weight",
+      "numel": 442368,
+      "exact": 442368,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.0.attn.qkv.bias",
+      "numel": 1152,
+      "exact": 1152,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.0.attn.proj.weight",
+      "numel": 147456,
+      "exact": 147456,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.0.attn.proj.bias",
+      "numel": 384,
+      "exact": 384,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.0.ln2.weight",
+      "numel": 384,
+      "exact": 384,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.0.ln2.bias",
+      "numel": 384,
+      "exact": 384,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.0.mlp.fc1.weight",
+      "numel": 589824,
+      "exact": 589824,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.0.mlp.fc1.bias",
+      "numel": 1536,
+      "exact": 1536,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.0.mlp.fc2.weight",
+      "numel": 589824,
+      "exact": 589824,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.0.mlp.fc2.bias",
+      "numel": 384,
+      "exact": 384,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.1.ln1.weight",
+      "numel": 384,
+      "exact": 384,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.1.ln1.bias",
+      "numel": 384,
+      "exact": 384,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.1.attn.qkv.weight",
+      "numel": 442368,
+      "exact": 442368,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.1.attn.qkv.bias",
+      "numel": 1152,
+      "exact": 1152,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.1.attn.proj.weight",
+      "numel": 147456,
+      "exact": 147456,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.1.attn.proj.bias",
+      "numel": 384,
+      "exact": 384,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.1.ln2.weight",
+      "numel": 384,
+      "exact": 384,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.1.ln2.bias",
+      "numel": 384,
+      "exact": 384,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.1.mlp.fc1.weight",
+      "numel": 589824,
+      "exact": 589824,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.1.mlp.fc1.bias",
+      "numel": 1536,
+      "exact": 1536,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.1.mlp.fc2.weight",
+      "numel": 589824,
+      "exact": 589824,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.1.mlp.fc2.bias",
+      "numel": 384,
+      "exact": 384,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.2.ln1.weight",
+      "numel": 384,
+      "exact": 384,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.2.ln1.bias",
+      "numel": 384,
+      "exact": 384,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.2.attn.qkv.weight",
+      "numel": 442368,
+      "exact": 442368,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.2.attn.qkv.bias",
+      "numel": 1152,
+      "exact": 1152,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.2.attn.proj.weight",
+      "numel": 147456,
+      "exact": 147456,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.2.attn.proj.bias",
+      "numel": 384,
+      "exact": 384,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.2.ln2.weight",
+      "numel": 384,
+      "exact": 384,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.2.ln2.bias",
+      "numel": 384,
+      "exact": 384,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.2.mlp.fc1.weight",
+      "numel": 589824,
+      "exact": 589824,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.2.mlp.fc1.bias",
+      "numel": 1536,
+      "exact": 1536,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.2.mlp.fc2.weight",
+      "numel": 589824,
+      "exact": 589824,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.2.mlp.fc2.bias",
+      "numel": 384,
+      "exact": 384,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.3.ln1.weight",
+      "numel": 384,
+      "exact": 384,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.3.ln1.bias",
+      "numel": 384,
+      "exact": 384,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.3.attn.qkv.weight",
+      "numel": 442368,
+      "exact": 442368,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.3.attn.qkv.bias",
+      "numel": 1152,
+      "exact": 1152,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.3.attn.proj.weight",
+      "numel": 147456,
+      "exact": 147456,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.3.attn.proj.bias",
+      "numel": 384,
+      "exact": 384,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.3.ln2.weight",
+      "numel": 384,
+      "exact": 384,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.3.ln2.bias",
+      "numel": 384,
+      "exact": 384,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.3.mlp.fc1.weight",
+      "numel": 589824,
+      "exact": 589824,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.3.mlp.fc1.bias",
+      "numel": 1536,
+      "exact": 1536,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.3.mlp.fc2.weight",
+      "numel": 589824,
+      "exact": 589824,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "blocks.3.mlp.fc2.bias",
+      "numel": 384,
+      "exact": 384,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "ln_f.weight",
+      "numel": 384,
+      "exact": 384,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "ln_f.bias",
+      "numel": 384,
+      "exact": 384,
+      "maxdiff": 0.0
+    },
+    {
+      "name": "lm_head.weight",
+      "numel": 1572864,
+      "exact": 1572864,
+      "maxdiff": 0.0
+    }
+  ],
+  "sensitivity": [
+    {
+      "name": "tok_emb.weight",
+      "numel": 1572864,
+      "grid": 396,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.0.ln1.weight",
+      "numel": 384,
+      "grid": 2,
+      "same_gb200": true,
+      "same_h100": true,
+      "same_b300": true
+    },
+    {
+      "name": "blocks.0.ln1.bias",
+      "numel": 384,
+      "grid": 2,
+      "same_gb200": true,
+      "same_h100": true,
+      "same_b300": true
+    },
+    {
+      "name": "blocks.0.attn.qkv.weight",
+      "numel": 442368,
+      "grid": 396,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.0.attn.qkv.bias",
+      "numel": 1152,
+      "grid": 5,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.0.attn.proj.weight",
+      "numel": 147456,
+      "grid": 396,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.0.attn.proj.bias",
+      "numel": 384,
+      "grid": 2,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.0.ln2.weight",
+      "numel": 384,
+      "grid": 2,
+      "same_gb200": true,
+      "same_h100": true,
+      "same_b300": true
+    },
+    {
+      "name": "blocks.0.ln2.bias",
+      "numel": 384,
+      "grid": 2,
+      "same_gb200": true,
+      "same_h100": true,
+      "same_b300": true
+    },
+    {
+      "name": "blocks.0.mlp.fc1.weight",
+      "numel": 589824,
+      "grid": 396,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.0.mlp.fc1.bias",
+      "numel": 1536,
+      "grid": 6,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.0.mlp.fc2.weight",
+      "numel": 589824,
+      "grid": 396,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.0.mlp.fc2.bias",
+      "numel": 384,
+      "grid": 2,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.1.ln1.weight",
+      "numel": 384,
+      "grid": 2,
+      "same_gb200": true,
+      "same_h100": true,
+      "same_b300": true
+    },
+    {
+      "name": "blocks.1.ln1.bias",
+      "numel": 384,
+      "grid": 2,
+      "same_gb200": true,
+      "same_h100": true,
+      "same_b300": true
+    },
+    {
+      "name": "blocks.1.attn.qkv.weight",
+      "numel": 442368,
+      "grid": 396,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.1.attn.qkv.bias",
+      "numel": 1152,
+      "grid": 5,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.1.attn.proj.weight",
+      "numel": 147456,
+      "grid": 396,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.1.attn.proj.bias",
+      "numel": 384,
+      "grid": 2,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.1.ln2.weight",
+      "numel": 384,
+      "grid": 2,
+      "same_gb200": true,
+      "same_h100": true,
+      "same_b300": true
+    },
+    {
+      "name": "blocks.1.ln2.bias",
+      "numel": 384,
+      "grid": 2,
+      "same_gb200": true,
+      "same_h100": true,
+      "same_b300": true
+    },
+    {
+      "name": "blocks.1.mlp.fc1.weight",
+      "numel": 589824,
+      "grid": 396,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.1.mlp.fc1.bias",
+      "numel": 1536,
+      "grid": 6,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.1.mlp.fc2.weight",
+      "numel": 589824,
+      "grid": 396,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.1.mlp.fc2.bias",
+      "numel": 384,
+      "grid": 2,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.2.ln1.weight",
+      "numel": 384,
+      "grid": 2,
+      "same_gb200": true,
+      "same_h100": true,
+      "same_b300": true
+    },
+    {
+      "name": "blocks.2.ln1.bias",
+      "numel": 384,
+      "grid": 2,
+      "same_gb200": true,
+      "same_h100": true,
+      "same_b300": true
+    },
+    {
+      "name": "blocks.2.attn.qkv.weight",
+      "numel": 442368,
+      "grid": 396,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.2.attn.qkv.bias",
+      "numel": 1152,
+      "grid": 5,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.2.attn.proj.weight",
+      "numel": 147456,
+      "grid": 396,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.2.attn.proj.bias",
+      "numel": 384,
+      "grid": 2,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.2.ln2.weight",
+      "numel": 384,
+      "grid": 2,
+      "same_gb200": true,
+      "same_h100": true,
+      "same_b300": true
+    },
+    {
+      "name": "blocks.2.ln2.bias",
+      "numel": 384,
+      "grid": 2,
+      "same_gb200": true,
+      "same_h100": true,
+      "same_b300": true
+    },
+    {
+      "name": "blocks.2.mlp.fc1.weight",
+      "numel": 589824,
+      "grid": 396,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.2.mlp.fc1.bias",
+      "numel": 1536,
+      "grid": 6,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.2.mlp.fc2.weight",
+      "numel": 589824,
+      "grid": 396,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.2.mlp.fc2.bias",
+      "numel": 384,
+      "grid": 2,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.3.ln1.weight",
+      "numel": 384,
+      "grid": 2,
+      "same_gb200": true,
+      "same_h100": true,
+      "same_b300": true
+    },
+    {
+      "name": "blocks.3.ln1.bias",
+      "numel": 384,
+      "grid": 2,
+      "same_gb200": true,
+      "same_h100": true,
+      "same_b300": true
+    },
+    {
+      "name": "blocks.3.attn.qkv.weight",
+      "numel": 442368,
+      "grid": 396,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.3.attn.qkv.bias",
+      "numel": 1152,
+      "grid": 5,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.3.attn.proj.weight",
+      "numel": 147456,
+      "grid": 396,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.3.attn.proj.bias",
+      "numel": 384,
+      "grid": 2,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.3.ln2.weight",
+      "numel": 384,
+      "grid": 2,
+      "same_gb200": true,
+      "same_h100": true,
+      "same_b300": true
+    },
+    {
+      "name": "blocks.3.ln2.bias",
+      "numel": 384,
+      "grid": 2,
+      "same_gb200": true,
+      "same_h100": true,
+      "same_b300": true
+    },
+    {
+      "name": "blocks.3.mlp.fc1.weight",
+      "numel": 589824,
+      "grid": 396,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.3.mlp.fc1.bias",
+      "numel": 1536,
+      "grid": 6,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.3.mlp.fc2.weight",
+      "numel": 589824,
+      "grid": 396,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "blocks.3.mlp.fc2.bias",
+      "numel": 384,
+      "grid": 2,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    },
+    {
+      "name": "ln_f.weight",
+      "numel": 384,
+      "grid": 2,
+      "same_gb200": true,
+      "same_h100": true,
+      "same_b300": true
+    },
+    {
+      "name": "ln_f.bias",
+      "numel": 384,
+      "grid": 2,
+      "same_gb200": true,
+      "same_h100": true,
+      "same_b300": true
+    },
+    {
+      "name": "lm_head.weight",
+      "numel": 1572864,
+      "grid": 396,
+      "same_gb200": false,
+      "same_h100": false,
+      "same_b300": false
+    }
+  ],
+  "device_invariant": {
+    "tensors": 18,
+    "total_tensors": 52,
+    "params": 6912,
+    "total_params": 10244352
+  },
+  "grid_sweep": {
+    "ok": 28,
+    "total": 28,
+    "grids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      12,
+      16,
+      24,
+      32,
+      48,
+      64,
+      80,
+      96,
+      112,
+      128,
+      160,
+      192,
+      224,
+      256,
+      288,
+      320,
+      352,
+      384,
+      396
+    ]
+  },
+  "large_tensors": [
+    {
+      "numel": 500000,
+      "grid": 396,
+      "exact": true
+    },
+    {
+      "numel": 1000000,
+      "grid": 396,
+      "exact": true
+    },
+    {
+      "numel": 2000000,
+      "grid": 396,
+      "exact": true
+    },
+    {
+      "numel": 8000000,
+      "grid": 396,
+      "exact": true
+    }
+  ]
+}

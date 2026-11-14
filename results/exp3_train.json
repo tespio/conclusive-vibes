@@ -1,0 +1,7221 @@
+{
+  "cast_calibration": {
+    "bf16": 0.9999986405352443,
+    "fp16": 0.9999999787837159,
+    "int8": 0.9999922391733912
+  },
+  "full": {
+    "tag": "full",
+    "seed": 424242,
+    "steps": 600,
+    "vocab_used": 4096,
+    "truth_profile": "RTX 4070 Ti SUPER",
+    "history": [
+      {
+        "step": 0,
+        "total": 10244352,
+        "exact": 10244352,
+        "exact_frac": 1.0,
+        "cos": 1.0000000000000002,
+        "sigma": null,
+        "per_tensor": [
+          {
+            "name": "tok_emb.weight",
+            "numel": 1572864,
+            "exact": 1572864,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.0.ln1.weight",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.0.ln1.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 442368,
+            "cos": 0.9999999999999999
+          },
+          {
+            "name": "blocks.0.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 1152,
+            "cos": 0.9999999999999999
+          },
+          {
+            "name": "blocks.0.attn.proj.weight",
+            "numel": 147456,
+            "exact": 147456,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.0.attn.proj.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.0.ln2.weight",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.0.ln2.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 589824,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.0.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 1536,
+            "cos": 0.9999999999999998
+          },
+          {
+            "name": "blocks.0.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 589824,
+            "cos": 0.9999999999999999
+          },
+          {
+            "name": "blocks.0.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.1.ln1.weight",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.1.ln1.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 442368,
+            "cos": 0.9999999999999999
+          },
+          {
+            "name": "blocks.1.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 1152,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.1.attn.proj.weight",
+            "numel": 147456,
+            "exact": 147456,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.1.attn.proj.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.1.ln2.weight",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.1.ln2.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 589824,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.1.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 1536,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.1.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 589824,
+            "cos": 0.9999999999999999
+          },
+          {
+            "name": "blocks.1.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.2.ln1.weight",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.2.ln1.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 442368,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.2.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 1152,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.2.attn.proj.weight",
+            "numel": 147456,
+            "exact": 147456,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.2.attn.proj.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.2.ln2.weight",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.2.ln2.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 589824,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.2.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 1536,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.2.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 589824,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.2.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.3.ln1.weight",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.3.ln1.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 442368,
+            "cos": 0.9999999999999999
+          },
+          {
+            "name": "blocks.3.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 1152,
+            "cos": 0.9999999999999998
+          },
+          {
+            "name": "blocks.3.attn.proj.weight",
+            "numel": 147456,
+            "exact": 147456,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.3.attn.proj.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.3.ln2.weight",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.3.ln2.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 589824,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.3.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 1536,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.3.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 589824,
+            "cos": 0.9999999999999999
+          },
+          {
+            "name": "blocks.3.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "ln_f.weight",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "ln_f.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 0.0
+          },
+          {
+            "name": "lm_head.weight",
+            "numel": 1572864,
+            "exact": 1572864,
+            "cos": 1.0000000000000002
+          }
+        ],
+        "detect_matches": 256,
+        "detect_profile": "RTX 4070 Ti SUPER",
+        "detect_seed": 424242,
+        "detect_conclusive": true,
+        "loss": null
+      },
+      {
+        "step": 1,
+        "total": 10244352,
+        "exact": 1225369,
+        "exact_frac": 0.11961410541145014,
+        "cos": 0.9999624721542362,
+        "sigma": 369435.14400056656,
+        "per_tensor": [
+          {
+            "name": "tok_emb.weight",
+            "numel": 1572864,
+            "exact": 1225344,
+            "cos": 0.999988540580482
+          },
+          {
+            "name": "blocks.0.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999999550327249
+          },
+          {
+            "name": "blocks.0.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9999482507940851
+          },
+          {
+            "name": "blocks.0.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 11,
+            "cos": 0.9999642801562715
+          },
+          {
+            "name": "blocks.0.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9999481742438925
+          },
+          {
+            "name": "blocks.0.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.999950321470499
+          },
+          {
+            "name": "blocks.0.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.999999955362898
+          },
+          {
+            "name": "blocks.0.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.999948183262303
+          },
+          {
+            "name": "blocks.0.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9999478428639571
+          },
+          {
+            "name": "blocks.0.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9997925067901214
+          },
+          {
+            "name": "blocks.0.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9997977206265799
+          },
+          {
+            "name": "blocks.1.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999999551164779
+          },
+          {
+            "name": "blocks.1.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9999481925538783
+          },
+          {
+            "name": "blocks.1.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 8,
+            "cos": 0.9999655706964642
+          },
+          {
+            "name": "blocks.1.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9999479653034403
+          },
+          {
+            "name": "blocks.1.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.999948171663307
+          },
+          {
+            "name": "blocks.1.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999999551543386
+          },
+          {
+            "name": "blocks.1.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9999482792795096
+          },
+          {
+            "name": "blocks.1.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9999477108839013
+          },
+          {
+            "name": "blocks.1.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9997926284122265
+          },
+          {
+            "name": "blocks.1.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9997919173191122
+          },
+          {
+            "name": "blocks.2.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999999551458113
+          },
+          {
+            "name": "blocks.2.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9999482599433656
+          },
+          {
+            "name": "blocks.2.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 4,
+            "cos": 0.9999664875885017
+          },
+          {
+            "name": "blocks.2.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9999479813353125
+          },
+          {
+            "name": "blocks.2.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999504433669337
+          },
+          {
+            "name": "blocks.2.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999999550250929
+          },
+          {
+            "name": "blocks.2.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9999481062772604
+          },
+          {
+            "name": "blocks.2.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9999485210566212
+          },
+          {
+            "name": "blocks.2.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9997928358484378
+          },
+          {
+            "name": "blocks.2.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9997997911220726
+          },
+          {
+            "name": "blocks.3.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999999550139195
+          },
+          {
+            "name": "blocks.3.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9999482400643744
+          },
+          {
+            "name": "blocks.3.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 2,
+            "cos": 0.9999656789903553
+          },
+          {
+            "name": "blocks.3.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.999948204157039
+          },
+          {
+            "name": "blocks.3.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999480566525812
+          },
+          {
+            "name": "blocks.3.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999999551231091
+          },
+          {
+            "name": "blocks.3.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9999482497055809
+          },
+          {
+            "name": "blocks.3.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9999481379861085
+          },
+          {
+            "name": "blocks.3.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9997924122866216
+          },
+          {
+            "name": "blocks.3.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9997964163852762
+          },
+          {
+            "name": "ln_f.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999999753154398
+          },
+          {
+            "name": "ln_f.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "lm_head.weight",
+            "numel": 1572864,
+            "exact": 0,
+            "cos": 0.9999482799570039
+          }
+        ],
+        "detect_matches": 256,
+        "detect_profile": "RTX 4070 Ti SUPER",
+        "detect_seed": 424242,
+        "detect_conclusive": true,
+        "loss": 8.50020694732666
+      },
+      {
+        "step": 2,
+        "total": 10244352,
+        "exact": 950400,
+        "exact_frac": 0.09277307144463603,
+        "cos": 0.9999076305455769,
+        "sigma": 235468.58333543962,
+        "per_tensor": [
+          {
+            "name": "tok_emb.weight",
+            "numel": 1572864,
+            "exact": 950400,
+            "cos": 0.9999638442609803
+          },
+          {
+            "name": "blocks.0.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999998940883248
+          },
+          {
+            "name": "blocks.0.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9998755993106139
+          },
+          {
+            "name": "blocks.0.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9999128859418704
+          },
+          {
+            "name": "blocks.0.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9998753540705452
+          },
+          {
+            "name": "blocks.0.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9998706745958224
+          },
+          {
+            "name": "blocks.0.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.999999889228169
+          },
+          {
+            "name": "blocks.0.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9998752561798916
+          },
+          {
+            "name": "blocks.0.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.999873816153598
+          },
+          {
+            "name": "blocks.0.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9995000752666201
+          },
+          {
+            "name": "blocks.0.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9995161669722191
+          },
+          {
+            "name": "blocks.1.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999998925246744
+          },
+          {
+            "name": "blocks.1.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9998749004800652
+          },
+          {
+            "name": "blocks.1.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9999181382154726
+          },
+          {
+            "name": "blocks.1.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9998754470689024
+          },
+          {
+            "name": "blocks.1.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.999873601280929
+          },
+          {
+            "name": "blocks.1.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999998890500347
+          },
+          {
+            "name": "blocks.1.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9998759546317079
+          },
+          {
+            "name": "blocks.1.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9998773542809203
+          },
+          {
+            "name": "blocks.1.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9995027064002858
+          },
+          {
+            "name": "blocks.1.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9994884615345463
+          },
+          {
+            "name": "blocks.2.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999998931767818
+          },
+          {
+            "name": "blocks.2.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9998746825280455
+          },
+          {
+            "name": "blocks.2.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9999218980284601
+          },
+          {
+            "name": "blocks.2.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9998758660264692
+          },
+          {
+            "name": "blocks.2.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9998823885328911
+          },
+          {
+            "name": "blocks.2.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999998889171675
+          },
+          {
+            "name": "blocks.2.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9998755748099499
+          },
+          {
+            "name": "blocks.2.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9998782603150989
+          },
+          {
+            "name": "blocks.2.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9995041483428101
+          },
+          {
+            "name": "blocks.2.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9995428643033505
+          },
+          {
+            "name": "blocks.3.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.999999893417375
+          },
+          {
+            "name": "blocks.3.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9998745402263517
+          },
+          {
+            "name": "blocks.3.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9999194899395367
+          },
+          {
+            "name": "blocks.3.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9998762660422266
+          },
+          {
+            "name": "blocks.3.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9998769061299027
+          },
+          {
+            "name": "blocks.3.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.999999893182979
+          },
+          {
+            "name": "blocks.3.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9998754305748582
+          },
+          {
+            "name": "blocks.3.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9998762239910173
+          },
+          {
+            "name": "blocks.3.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9995003053217056
+          },
+          {
+            "name": "blocks.3.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9995302809862511
+          },
+          {
+            "name": "ln_f.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999999520248628
+          },
+          {
+            "name": "ln_f.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "lm_head.weight",
+            "numel": 1572864,
+            "exact": 0,
+            "cos": 0.9998675637846621
+          }
+        ],
+        "detect_matches": 0,
+        "detect_profile": "RTX 4070 Ti SUPER",
+        "detect_seed": 422242,
+        "detect_conclusive": false,
+        "loss": 8.500639152526855
+      },
+      {
+        "step": 5,
+        "total": 10244352,
+        "exact": 443138,
+        "exact_frac": 0.043256811167753706,
+        "cos": 0.999706436704534,
+        "sigma": 132062.87123664067,
+        "per_tensor": [
+          {
+            "name": "tok_emb.weight",
+            "numel": 1572864,
+            "exact": 443137,
+            "cos": 0.9998383213967333
+          },
+          {
+            "name": "blocks.0.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999996808151218
+          },
+          {
+            "name": "blocks.0.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.999620669905916
+          },
+          {
+            "name": "blocks.0.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9997281292602188
+          },
+          {
+            "name": "blocks.0.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.999619246465675
+          },
+          {
+            "name": "blocks.0.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9995971637557807
+          },
+          {
+            "name": "blocks.0.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999996728869168
+          },
+          {
+            "name": "blocks.0.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9996176955672633
+          },
+          {
+            "name": "blocks.0.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9996230375995918
+          },
+          {
+            "name": "blocks.0.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 1,
+            "cos": 0.9984692786206828
+          },
+          {
+            "name": "blocks.0.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.998533381463741
+          },
+          {
+            "name": "blocks.1.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999996537956339
+          },
+          {
+            "name": "blocks.1.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.999615551444328
+          },
+          {
+            "name": "blocks.1.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9997500910589391
+          },
+          {
+            "name": "blocks.1.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9996237227514414
+          },
+          {
+            "name": "blocks.1.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9996342399222012
+          },
+          {
+            "name": "blocks.1.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999996881594231
+          },
+          {
+            "name": "blocks.1.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9996219310837304
+          },
+          {
+            "name": "blocks.1.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9996399947053568
+          },
+          {
+            "name": "blocks.1.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9984901347765107
+          },
+          {
+            "name": "blocks.1.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9985533574656842
+          },
+          {
+            "name": "blocks.2.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999996748143131
+          },
+          {
+            "name": "blocks.2.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9996133519316325
+          },
+          {
+            "name": "blocks.2.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9997710838158853
+          },
+          {
+            "name": "blocks.2.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9996263664208206
+          },
+          {
+            "name": "blocks.2.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9996572997272398
+          },
+          {
+            "name": "blocks.2.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999996661745237
+          },
+          {
+            "name": "blocks.2.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9996187515018249
+          },
+          {
+            "name": "blocks.2.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9996373797327779
+          },
+          {
+            "name": "blocks.2.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9984982985658252
+          },
+          {
+            "name": "blocks.2.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9987094876579969
+          },
+          {
+            "name": "blocks.3.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.999999693424234
+          },
+          {
+            "name": "blocks.3.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9996174682376907
+          },
+          {
+            "name": "blocks.3.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9997724340686365
+          },
+          {
+            "name": "blocks.3.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9996273798917545
+          },
+          {
+            "name": "blocks.3.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9996376565396458
+          },
+          {
+            "name": "blocks.3.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999996713579646
+          },
+          {
+            "name": "blocks.3.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9996190920888887
+          },
+          {
+            "name": "blocks.3.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.999630171086868
+          },
+          {
+            "name": "blocks.3.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.998483916933717
+          },
+          {
+            "name": "blocks.3.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9986127075257634
+          },
+          {
+            "name": "ln_f.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999998919490193
+          },
+          {
+            "name": "ln_f.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "lm_head.weight",
+            "numel": 1572864,
+            "exact": 0,
+            "cos": 0.9995551607515523
+          }
+        ],
+        "detect_matches": 0,
+        "detect_profile": "RTX 4070 Ti SUPER",
+        "detect_seed": 422242,
+        "detect_conclusive": false,
+        "loss": 8.499141515588759
+      },
+      {
+        "step": 10,
+        "total": 10244352,
+        "exact": 134017,
+        "exact_frac": 0.013082037790189169,
+        "cos": 0.9993463446247307,
+        "sigma": 88478.92544545262,
+        "per_tensor": [
+          {
+            "name": "tok_emb.weight",
+            "numel": 1572864,
+            "exact": 134016,
+            "cos": 0.9995490126889307
+          },
+          {
+            "name": "blocks.0.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.999999302169292
+          },
+          {
+            "name": "blocks.0.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9991880208805276
+          },
+          {
+            "name": "blocks.0.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9994153733172931
+          },
+          {
+            "name": "blocks.0.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9991825983280466
+          },
+          {
+            "name": "blocks.0.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9991060910536591
+          },
+          {
+            "name": "blocks.0.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999992689256852
+          },
+          {
+            "name": "blocks.0.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9991726943521635
+          },
+          {
+            "name": "blocks.0.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9991781049281314
+          },
+          {
+            "name": "blocks.0.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9966817054656519
+          },
+          {
+            "name": "blocks.0.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9966793023644244
+          },
+          {
+            "name": "blocks.1.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999992647902011
+          },
+          {
+            "name": "blocks.1.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.999172170464663
+          },
+          {
+            "name": "blocks.1.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9994639746868931
+          },
+          {
+            "name": "blocks.1.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9991916975415938
+          },
+          {
+            "name": "blocks.1.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9992244079865323
+          },
+          {
+            "name": "blocks.1.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999993460277816
+          },
+          {
+            "name": "blocks.1.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.999186377026039
+          },
+          {
+            "name": "blocks.1.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9992305507102724
+          },
+          {
+            "name": "blocks.1.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9967467517047919
+          },
+          {
+            "name": "blocks.1.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9968511334968949
+          },
+          {
+            "name": "blocks.2.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999992847221649
+          },
+          {
+            "name": "blocks.2.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9991572551693283
+          },
+          {
+            "name": "blocks.2.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9994930730608647
+          },
+          {
+            "name": "blocks.2.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9991934423793017
+          },
+          {
+            "name": "blocks.2.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.999257953042089
+          },
+          {
+            "name": "blocks.2.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999992804683299
+          },
+          {
+            "name": "blocks.2.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9991727126100365
+          },
+          {
+            "name": "blocks.2.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9992261182183821
+          },
+          {
+            "name": "blocks.2.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9967606869320347
+          },
+          {
+            "name": "blocks.2.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9971883979930299
+          },
+          {
+            "name": "blocks.3.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999993406461926
+          },
+          {
+            "name": "blocks.3.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9991740231669496
+          },
+          {
+            "name": "blocks.3.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9995073026193286
+          },
+          {
+            "name": "blocks.3.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9991997814155155
+          },
+          {
+            "name": "blocks.3.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9992283783404077
+          },
+          {
+            "name": "blocks.3.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999992950971572
+          },
+          {
+            "name": "blocks.3.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 1,
+            "cos": 0.9991789051061581
+          },
+          {
+            "name": "blocks.3.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9992205511696168
+          },
+          {
+            "name": "blocks.3.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9967722659898519
+          },
+          {
+            "name": "blocks.3.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9971499683030888
+          },
+          {
+            "name": "ln_f.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999998051646156
+          },
+          {
+            "name": "ln_f.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "lm_head.weight",
+            "numel": 1572864,
+            "exact": 0,
+            "cos": 0.9989830768162693
+          }
+        ],
+        "detect_matches": 0,
+        "detect_profile": "RTX 4070 Ti SUPER",
+        "detect_seed": 422242,
+        "detect_conclusive": false,
+        "loss": 8.491081883198667
+      },
+      {
+        "step": 20,
+        "total": 10244352,
+        "exact": 11143,
+        "exact_frac": 0.0010877213121923183,
+        "cos": 0.9987340469783955,
+        "sigma": 63548.57281236649,
+        "per_tensor": [
+          {
+            "name": "tok_emb.weight",
+            "numel": 1572864,
+            "exact": 11136,
+            "cos": 0.9989443746445865
+          },
+          {
+            "name": "blocks.0.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999986435076463
+          },
+          {
+            "name": "blocks.0.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 1,
+            "cos": 0.9984709902441316
+          },
+          {
+            "name": "blocks.0.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9988849672113272
+          },
+          {
+            "name": "blocks.0.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9984665578870325
+          },
+          {
+            "name": "blocks.0.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9983236188309579
+          },
+          {
+            "name": "blocks.0.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999986459991174
+          },
+          {
+            "name": "blocks.0.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 1,
+            "cos": 0.9984442143607877
+          },
+          {
+            "name": "blocks.0.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9984182702477615
+          },
+          {
+            "name": "blocks.0.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.993765094015355
+          },
+          {
+            "name": "blocks.0.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9934456961177444
+          },
+          {
+            "name": "blocks.1.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999986626801891
+          },
+          {
+            "name": "blocks.1.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9984448629360086
+          },
+          {
+            "name": "blocks.1.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9989516376921536
+          },
+          {
+            "name": "blocks.1.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9984770563963846
+          },
+          {
+            "name": "blocks.1.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9985298218476868
+          },
+          {
+            "name": "blocks.1.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999986969796975
+          },
+          {
+            "name": "blocks.1.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 1,
+            "cos": 0.9984805391650955
+          },
+          {
+            "name": "blocks.1.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9985295478829648
+          },
+          {
+            "name": "blocks.1.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9939206625257474
+          },
+          {
+            "name": "blocks.1.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9939163077866546
+          },
+          {
+            "name": "blocks.2.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999986228583849
+          },
+          {
+            "name": "blocks.2.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9984098179846296
+          },
+          {
+            "name": "blocks.2.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.998994308670578
+          },
+          {
+            "name": "blocks.2.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9984609206312686
+          },
+          {
+            "name": "blocks.2.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9985586191113441
+          },
+          {
+            "name": "blocks.2.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999986155318085
+          },
+          {
+            "name": "blocks.2.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.998435398280624
+          },
+          {
+            "name": "blocks.2.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9984906647285661
+          },
+          {
+            "name": "blocks.2.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9938855723920834
+          },
+          {
+            "name": "blocks.2.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9943481031723397
+          },
+          {
+            "name": "blocks.3.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999987971059886
+          },
+          {
+            "name": "blocks.3.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 2,
+            "cos": 0.9984628573861706
+          },
+          {
+            "name": "blocks.3.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 1,
+            "cos": 0.9990512336639404
+          },
+          {
+            "name": "blocks.3.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9984617748027756
+          },
+          {
+            "name": "blocks.3.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9984955509530614
+          },
+          {
+            "name": "blocks.3.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999986760703915
+          },
+          {
+            "name": "blocks.3.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9984516067934307
+          },
+          {
+            "name": "blocks.3.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9985439469196122
+          },
+          {
+            "name": "blocks.3.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9939074218695976
+          },
+          {
+            "name": "blocks.3.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9945357635632497
+          },
+          {
+            "name": "ln_f.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999995881581181
+          },
+          {
+            "name": "ln_f.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "lm_head.weight",
+            "numel": 1572864,
+            "exact": 1,
+            "cos": 0.9980190816041355
+          }
+        ],
+        "detect_matches": 0,
+        "detect_profile": "RTX 4070 Ti SUPER",
+        "detect_seed": 422242,
+        "detect_conclusive": false,
+        "loss": 8.473655598320738
+      },
+      {
+        "step": 50,
+        "total": 10244352,
+        "exact": 4,
+        "exact_frac": 3.904590549016668e-07,
+        "cos": 0.9977633751843238,
+        "sigma": 47775.05673924365,
+        "per_tensor": [
+          {
+            "name": "tok_emb.weight",
+            "numel": 1572864,
+            "exact": 1,
+            "cos": 0.9976974856417664
+          },
+          {
+            "name": "blocks.0.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999975857171676
+          },
+          {
+            "name": "blocks.0.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 1,
+            "cos": 0.9973212854064053
+          },
+          {
+            "name": "blocks.0.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9981057899024671
+          },
+          {
+            "name": "blocks.0.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9974036912362524
+          },
+          {
+            "name": "blocks.0.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9972375386255908
+          },
+          {
+            "name": "blocks.0.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.999997735641759
+          },
+          {
+            "name": "blocks.0.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9973730757890954
+          },
+          {
+            "name": "blocks.0.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9972535806224033
+          },
+          {
+            "name": "blocks.0.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9894766651121927
+          },
+          {
+            "name": "blocks.0.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9888547552189575
+          },
+          {
+            "name": "blocks.1.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999977794870848
+          },
+          {
+            "name": "blocks.1.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.997433862394131
+          },
+          {
+            "name": "blocks.1.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9981594667616533
+          },
+          {
+            "name": "blocks.1.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9973575496958095
+          },
+          {
+            "name": "blocks.1.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9972638723190831
+          },
+          {
+            "name": "blocks.1.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999975454760794
+          },
+          {
+            "name": "blocks.1.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9975439487711397
+          },
+          {
+            "name": "blocks.1.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9974608607044508
+          },
+          {
+            "name": "blocks.1.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9898818295068195
+          },
+          {
+            "name": "blocks.1.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9883753021949844
+          },
+          {
+            "name": "blocks.2.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999976428772751
+          },
+          {
+            "name": "blocks.2.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9974687389200856
+          },
+          {
+            "name": "blocks.2.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9981989126790355
+          },
+          {
+            "name": "blocks.2.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9972967463308632
+          },
+          {
+            "name": "blocks.2.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9972175534306779
+          },
+          {
+            "name": "blocks.2.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999975558378992
+          },
+          {
+            "name": "blocks.2.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 1,
+            "cos": 0.9974139457116489
+          },
+          {
+            "name": "blocks.2.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9973352868741069
+          },
+          {
+            "name": "blocks.2.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 1,
+            "cos": 0.9896246597275159
+          },
+          {
+            "name": "blocks.2.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9890491908338334
+          },
+          {
+            "name": "blocks.3.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999979456613257
+          },
+          {
+            "name": "blocks.3.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9976025339930233
+          },
+          {
+            "name": "blocks.3.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9984044596735437
+          },
+          {
+            "name": "blocks.3.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9972930366340668
+          },
+          {
+            "name": "blocks.3.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9971245610672728
+          },
+          {
+            "name": "blocks.3.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999977661452909
+          },
+          {
+            "name": "blocks.3.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9974437595729883
+          },
+          {
+            "name": "blocks.3.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9975163121501652
+          },
+          {
+            "name": "blocks.3.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9895399369016924
+          },
+          {
+            "name": "blocks.3.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9895862675721487
+          },
+          {
+            "name": "ln_f.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999984978928925
+          },
+          {
+            "name": "ln_f.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "lm_head.weight",
+            "numel": 1572864,
+            "exact": 0,
+            "cos": 0.9962859908252563
+          }
+        ],
+        "detect_matches": 0,
+        "detect_profile": "RTX 4070 Ti SUPER",
+        "detect_seed": 422242,
+        "detect_conclusive": false,
+        "loss": 8.412481549395384
+      },
+      {
+        "step": 100,
+        "total": 10244352,
+        "exact": 6,
+        "exact_frac": 5.856885823525002e-07,
+        "cos": 0.9968847422671898,
+        "sigma": 40454.20813911019,
+        "per_tensor": [
+          {
+            "name": "tok_emb.weight",
+            "numel": 1572864,
+            "exact": 2,
+            "cos": 0.9962244010625453
+          },
+          {
+            "name": "blocks.0.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999964372306499
+          },
+          {
+            "name": "blocks.0.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9959713113918971
+          },
+          {
+            "name": "blocks.0.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.997512749054811
+          },
+          {
+            "name": "blocks.0.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9963271764201873
+          },
+          {
+            "name": "blocks.0.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.99690215751519
+          },
+          {
+            "name": "blocks.0.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.999996691813406
+          },
+          {
+            "name": "blocks.0.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9963229099858338
+          },
+          {
+            "name": "blocks.0.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9965400362823347
+          },
+          {
+            "name": "blocks.0.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9853249576210089
+          },
+          {
+            "name": "blocks.0.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9852346009791069
+          },
+          {
+            "name": "blocks.1.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999967957865434
+          },
+          {
+            "name": "blocks.1.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9965087963068817
+          },
+          {
+            "name": "blocks.1.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9973245331553452
+          },
+          {
+            "name": "blocks.1.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9961895142630867
+          },
+          {
+            "name": "blocks.1.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9958306744172932
+          },
+          {
+            "name": "blocks.1.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999965504442971
+          },
+          {
+            "name": "blocks.1.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 1,
+            "cos": 0.9969866065294424
+          },
+          {
+            "name": "blocks.1.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9967079066159672
+          },
+          {
+            "name": "blocks.1.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9864154049284682
+          },
+          {
+            "name": "blocks.1.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9821956523848991
+          },
+          {
+            "name": "blocks.2.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999969055823398
+          },
+          {
+            "name": "blocks.2.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9970066782849535
+          },
+          {
+            "name": "blocks.2.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 1,
+            "cos": 0.9976256809249521
+          },
+          {
+            "name": "blocks.2.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9961282300680965
+          },
+          {
+            "name": "blocks.2.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9955423007394788
+          },
+          {
+            "name": "blocks.2.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999963132571725
+          },
+          {
+            "name": "blocks.2.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 1,
+            "cos": 0.996779664255348
+          },
+          {
+            "name": "blocks.2.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9964342151404051
+          },
+          {
+            "name": "blocks.2.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9856418356706145
+          },
+          {
+            "name": "blocks.2.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9824745326003472
+          },
+          {
+            "name": "blocks.3.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999969518668832
+          },
+          {
+            "name": "blocks.3.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9972249845237136
+          },
+          {
+            "name": "blocks.3.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9978794422521533
+          },
+          {
+            "name": "blocks.3.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9961273302179251
+          },
+          {
+            "name": "blocks.3.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.995335944547703
+          },
+          {
+            "name": "blocks.3.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.999996425479119
+          },
+          {
+            "name": "blocks.3.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 1,
+            "cos": 0.9968058312458646
+          },
+          {
+            "name": "blocks.3.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9965732599887
+          },
+          {
+            "name": "blocks.3.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9854057837127675
+          },
+          {
+            "name": "blocks.3.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9829984326710798
+          },
+          {
+            "name": "ln_f.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999960798777283
+          },
+          {
+            "name": "ln_f.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "lm_head.weight",
+            "numel": 1572864,
+            "exact": 0,
+            "cos": 0.9947505957357915
+          }
+        ],
+        "detect_matches": 0,
+        "detect_profile": "RTX 4070 Ti SUPER",
+        "detect_seed": 422242,
+        "detect_conclusive": false,
+        "loss": 8.37047347102523
+      },
+      {
+        "step": 200,
+        "total": 10244352,
+        "exact": 2,
+        "exact_frac": 1.952295274508334e-07,
+        "cos": 0.9942023380417986,
+        "sigma": 29594.156839752868,
+        "per_tensor": [
+          {
+            "name": "tok_emb.weight",
+            "numel": 1572864,
+            "exact": 0,
+            "cos": 0.9919161918436648
+          },
+          {
+            "name": "blocks.0.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999919678332162
+          },
+          {
+            "name": "blocks.0.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9914816022879566
+          },
+          {
+            "name": "blocks.0.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9953987907027639
+          },
+          {
+            "name": "blocks.0.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9918410410025343
+          },
+          {
+            "name": "blocks.0.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9970569983342926
+          },
+          {
+            "name": "blocks.0.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999941581429682
+          },
+          {
+            "name": "blocks.0.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9922918206899073
+          },
+          {
+            "name": "blocks.0.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9958877635079711
+          },
+          {
+            "name": "blocks.0.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9703501370708374
+          },
+          {
+            "name": "blocks.0.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9810303941974232
+          },
+          {
+            "name": "blocks.1.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999940520479247
+          },
+          {
+            "name": "blocks.1.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.992876673157627
+          },
+          {
+            "name": "blocks.1.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9950120786873554
+          },
+          {
+            "name": "blocks.1.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9923221737632457
+          },
+          {
+            "name": "blocks.1.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9919980965977603
+          },
+          {
+            "name": "blocks.1.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999937784141067
+          },
+          {
+            "name": "blocks.1.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 1,
+            "cos": 0.9946184572140265
+          },
+          {
+            "name": "blocks.1.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9944362880035899
+          },
+          {
+            "name": "blocks.1.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9746849869629384
+          },
+          {
+            "name": "blocks.1.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9663883669418077
+          },
+          {
+            "name": "blocks.2.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.999994458229181
+          },
+          {
+            "name": "blocks.2.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9954961032621753
+          },
+          {
+            "name": "blocks.2.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9962646197568593
+          },
+          {
+            "name": "blocks.2.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9926842428079107
+          },
+          {
+            "name": "blocks.2.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.991468897240935
+          },
+          {
+            "name": "blocks.2.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999933638313641
+          },
+          {
+            "name": "blocks.2.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.994604280412599
+          },
+          {
+            "name": "blocks.2.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9942739983188482
+          },
+          {
+            "name": "blocks.2.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9736867753188722
+          },
+          {
+            "name": "blocks.2.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9669854670157633
+          },
+          {
+            "name": "blocks.3.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999939927066912
+          },
+          {
+            "name": "blocks.3.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9961134398468218
+          },
+          {
+            "name": "blocks.3.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9965666148208318
+          },
+          {
+            "name": "blocks.3.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9927871391736237
+          },
+          {
+            "name": "blocks.3.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9911566404045087
+          },
+          {
+            "name": "blocks.3.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999929560977774
+          },
+          {
+            "name": "blocks.3.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9946889273858595
+          },
+          {
+            "name": "blocks.3.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9946008528631812
+          },
+          {
+            "name": "blocks.3.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 1,
+            "cos": 0.9734666785487803
+          },
+          {
+            "name": "blocks.3.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9679625507009415
+          },
+          {
+            "name": "ln_f.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999882239249339
+          },
+          {
+            "name": "ln_f.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "lm_head.weight",
+            "numel": 1572864,
+            "exact": 0,
+            "cos": 0.9914009991612438
+          }
+        ],
+        "detect_matches": 0,
+        "detect_profile": "RTX 4070 Ti SUPER",
+        "detect_seed": 422242,
+        "detect_conclusive": false,
+        "loss": 8.355276417206618
+      },
+      {
+        "step": 400,
+        "total": 10244352,
+        "exact": 3,
+        "exact_frac": 2.928442911762501e-07,
+        "cos": 0.9868677811862118,
+        "sigma": 19554.543324563,
+        "per_tensor": [
+          {
+            "name": "tok_emb.weight",
+            "numel": 1572864,
+            "exact": 0,
+            "cos": 0.9814860584161171
+          },
+          {
+            "name": "blocks.0.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999836205311761
+          },
+          {
+            "name": "blocks.0.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 1,
+            "cos": 0.9820715012805722
+          },
+          {
+            "name": "blocks.0.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9870117986117825
+          },
+          {
+            "name": "blocks.0.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9823922861981905
+          },
+          {
+            "name": "blocks.0.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9859375910730896
+          },
+          {
+            "name": "blocks.0.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999858458109406
+          },
+          {
+            "name": "blocks.0.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9826279132161404
+          },
+          {
+            "name": "blocks.0.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9897280147792594
+          },
+          {
+            "name": "blocks.0.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9363550438299748
+          },
+          {
+            "name": "blocks.0.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9371940061401466
+          },
+          {
+            "name": "blocks.1.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999852969419649
+          },
+          {
+            "name": "blocks.1.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9826594543112971
+          },
+          {
+            "name": "blocks.1.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.980485396984144
+          },
+          {
+            "name": "blocks.1.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.982304159047339
+          },
+          {
+            "name": "blocks.1.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9769172904294892
+          },
+          {
+            "name": "blocks.1.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999825086437284
+          },
+          {
+            "name": "blocks.1.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 1,
+            "cos": 0.9870141581560647
+          },
+          {
+            "name": "blocks.1.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.983758451828054
+          },
+          {
+            "name": "blocks.1.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.944499109996339
+          },
+          {
+            "name": "blocks.1.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9256501177141562
+          },
+          {
+            "name": "blocks.2.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.999988428165345
+          },
+          {
+            "name": "blocks.2.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9879216354960717
+          },
+          {
+            "name": "blocks.2.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9899433888413631
+          },
+          {
+            "name": "blocks.2.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.984532760711341
+          },
+          {
+            "name": "blocks.2.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9825068387412839
+          },
+          {
+            "name": "blocks.2.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999819027576372
+          },
+          {
+            "name": "blocks.2.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9871722861950817
+          },
+          {
+            "name": "blocks.2.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9889325587294014
+          },
+          {
+            "name": "blocks.2.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9446323973014469
+          },
+          {
+            "name": "blocks.2.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9377473499589102
+          },
+          {
+            "name": "blocks.3.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999864778198407
+          },
+          {
+            "name": "blocks.3.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 1,
+            "cos": 0.9883164916864666
+          },
+          {
+            "name": "blocks.3.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9929272563573883
+          },
+          {
+            "name": "blocks.3.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9849824871722898
+          },
+          {
+            "name": "blocks.3.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9830865375202174
+          },
+          {
+            "name": "blocks.3.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999790362104366
+          },
+          {
+            "name": "blocks.3.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9870062414113085
+          },
+          {
+            "name": "blocks.3.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9903495368786331
+          },
+          {
+            "name": "blocks.3.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9443893334708796
+          },
+          {
+            "name": "blocks.3.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9397817755165875
+          },
+          {
+            "name": "ln_f.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999561711024768
+          },
+          {
+            "name": "ln_f.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "lm_head.weight",
+            "numel": 1572864,
+            "exact": 0,
+            "cos": 0.9823741190772498
+          }
+        ],
+        "detect_matches": 0,
+        "detect_profile": "RTX 4070 Ti SUPER",
+        "detect_seed": 422242,
+        "detect_conclusive": false,
+        "loss": 8.339478025445759
+      },
+      {
+        "step": 600,
+        "total": 10244352,
+        "exact": 1,
+        "exact_frac": 9.76147637254167e-08,
+        "cos": 0.9791335953305778,
+        "sigma": 15421.365487043347,
+        "per_tensor": [
+          {
+            "name": "tok_emb.weight",
+            "numel": 1572864,
+            "exact": 0,
+            "cos": 0.9707156025551771
+          },
+          {
+            "name": "blocks.0.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999791609145756
+          },
+          {
+            "name": "blocks.0.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9735520628602945
+          },
+          {
+            "name": "blocks.0.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9817151236388652
+          },
+          {
+            "name": "blocks.0.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9762576229704389
+          },
+          {
+            "name": "blocks.0.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9827881187576178
+          },
+          {
+            "name": "blocks.0.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999814613043325
+          },
+          {
+            "name": "blocks.0.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 1,
+            "cos": 0.9743300842560831
+          },
+          {
+            "name": "blocks.0.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9857565522007611
+          },
+          {
+            "name": "blocks.0.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9062612266342274
+          },
+          {
+            "name": "blocks.0.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9364576663794911
+          },
+          {
+            "name": "blocks.1.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999735467057304
+          },
+          {
+            "name": "blocks.1.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.970742802429943
+          },
+          {
+            "name": "blocks.1.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9583631126267694
+          },
+          {
+            "name": "blocks.1.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9714490023046473
+          },
+          {
+            "name": "blocks.1.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9653755530953826
+          },
+          {
+            "name": "blocks.1.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999693005859908
+          },
+          {
+            "name": "blocks.1.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9791716942166571
+          },
+          {
+            "name": "blocks.1.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9691795954172769
+          },
+          {
+            "name": "blocks.1.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9161103612768837
+          },
+          {
+            "name": "blocks.1.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.8947576450226175
+          },
+          {
+            "name": "blocks.2.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999766269357175
+          },
+          {
+            "name": "blocks.2.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9792381477052201
+          },
+          {
+            "name": "blocks.2.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9847191663651522
+          },
+          {
+            "name": "blocks.2.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9759234331545263
+          },
+          {
+            "name": "blocks.2.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.973251634861759
+          },
+          {
+            "name": "blocks.2.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999622100995351
+          },
+          {
+            "name": "blocks.2.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9788041634021506
+          },
+          {
+            "name": "blocks.2.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9798826291438941
+          },
+          {
+            "name": "blocks.2.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9172634366313196
+          },
+          {
+            "name": "blocks.2.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9099662021718992
+          },
+          {
+            "name": "blocks.3.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.999975693751241
+          },
+          {
+            "name": "blocks.3.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9813302650609659
+          },
+          {
+            "name": "blocks.3.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9898726943889036
+          },
+          {
+            "name": "blocks.3.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9768378028315816
+          },
+          {
+            "name": "blocks.3.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9750815288345749
+          },
+          {
+            "name": "blocks.3.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999516272128693
+          },
+          {
+            "name": "blocks.3.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9784404366285678
+          },
+          {
+            "name": "blocks.3.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.983183614211738
+          },
+          {
+            "name": "blocks.3.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9174757327181473
+          },
+          {
+            "name": "blocks.3.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9156151880736624
+          },
+          {
+            "name": "ln_f.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999018977439792
+          },
+          {
+            "name": "ln_f.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "lm_head.weight",
+            "numel": 1572864,
+            "exact": 0,
+            "cos": 0.9712109250542303
+          }
+        ],
+        "detect_matches": 0,
+        "detect_profile": "RTX 4070 Ti SUPER",
+        "detect_seed": 422242,
+        "detect_conclusive": false,
+        "loss": 8.322225974591282
+      }
+    ],
+    "seconds": 19.73798704147339
+  },
+  "partial": {
+    "tag": "partial",
+    "seed": 424242,
+    "steps": 600,
+    "vocab_used": 64,
+    "truth_profile": "RTX 4070 Ti SUPER",
+    "history": [
+      {
+        "step": 0,
+        "total": 10244352,
+        "exact": 10244352,
+        "exact_frac": 1.0,
+        "cos": 1.0000000000000002,
+        "sigma": null,
+        "per_tensor": [
+          {
+            "name": "tok_emb.weight",
+            "numel": 1572864,
+            "exact": 1572864,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.0.ln1.weight",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.0.ln1.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 442368,
+            "cos": 0.9999999999999999
+          },
+          {
+            "name": "blocks.0.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 1152,
+            "cos": 0.9999999999999999
+          },
+          {
+            "name": "blocks.0.attn.proj.weight",
+            "numel": 147456,
+            "exact": 147456,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.0.attn.proj.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.0.ln2.weight",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.0.ln2.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 589824,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.0.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 1536,
+            "cos": 0.9999999999999998
+          },
+          {
+            "name": "blocks.0.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 589824,
+            "cos": 0.9999999999999999
+          },
+          {
+            "name": "blocks.0.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.1.ln1.weight",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.1.ln1.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 442368,
+            "cos": 0.9999999999999999
+          },
+          {
+            "name": "blocks.1.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 1152,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.1.attn.proj.weight",
+            "numel": 147456,
+            "exact": 147456,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.1.attn.proj.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.1.ln2.weight",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.1.ln2.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 589824,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.1.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 1536,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.1.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 589824,
+            "cos": 0.9999999999999999
+          },
+          {
+            "name": "blocks.1.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.2.ln1.weight",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.2.ln1.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 442368,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.2.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 1152,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.2.attn.proj.weight",
+            "numel": 147456,
+            "exact": 147456,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.2.attn.proj.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.2.ln2.weight",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.2.ln2.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 589824,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.2.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 1536,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.2.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 589824,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.2.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.3.ln1.weight",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.3.ln1.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 442368,
+            "cos": 0.9999999999999999
+          },
+          {
+            "name": "blocks.3.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 1152,
+            "cos": 0.9999999999999998
+          },
+          {
+            "name": "blocks.3.attn.proj.weight",
+            "numel": 147456,
+            "exact": 147456,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.3.attn.proj.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.3.ln2.weight",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "blocks.3.ln2.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 589824,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.3.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 1536,
+            "cos": 1.0
+          },
+          {
+            "name": "blocks.3.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 589824,
+            "cos": 0.9999999999999999
+          },
+          {
+            "name": "blocks.3.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "ln_f.weight",
+            "numel": 384,
+            "exact": 384,
+            "cos": 1.0000000000000002
+          },
+          {
+            "name": "ln_f.bias",
+            "numel": 384,
+            "exact": 384,
+            "cos": 0.0
+          },
+          {
+            "name": "lm_head.weight",
+            "numel": 1572864,
+            "exact": 1572864,
+            "cos": 1.0000000000000002
+          }
+        ],
+        "detect_matches": 256,
+        "detect_profile": "RTX 4070 Ti SUPER",
+        "detect_seed": 424242,
+        "detect_conclusive": true,
+        "loss": null
+      },
+      {
+        "step": 1,
+        "total": 10244352,
+        "exact": 1548308,
+        "exact_frac": 0.15113771959417246,
+        "cos": 0.9999638116167984,
+        "sigma": 376210.46376787586,
+        "per_tensor": [
+          {
+            "name": "tok_emb.weight",
+            "numel": 1572864,
+            "exact": 1548288,
+            "cos": 0.9999991893569637
+          },
+          {
+            "name": "blocks.0.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.999999955028351
+          },
+          {
+            "name": "blocks.0.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9999482478722642
+          },
+          {
+            "name": "blocks.0.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 11,
+            "cos": 0.9999642838425847
+          },
+          {
+            "name": "blocks.0.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9999481701777689
+          },
+          {
+            "name": "blocks.0.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999507267799396
+          },
+          {
+            "name": "blocks.0.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999999551035531
+          },
+          {
+            "name": "blocks.0.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.999948176505042
+          },
+          {
+            "name": "blocks.0.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9999477491309412
+          },
+          {
+            "name": "blocks.0.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9997924592125593
+          },
+          {
+            "name": "blocks.0.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9997977586851926
+          },
+          {
+            "name": "blocks.1.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999999553136656
+          },
+          {
+            "name": "blocks.1.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9999481739033369
+          },
+          {
+            "name": "blocks.1.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 3,
+            "cos": 0.9999656240577475
+          },
+          {
+            "name": "blocks.1.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9999479628188004
+          },
+          {
+            "name": "blocks.1.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999488030150929
+          },
+          {
+            "name": "blocks.1.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999999550476879
+          },
+          {
+            "name": "blocks.1.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 1,
+            "cos": 0.9999482715530135
+          },
+          {
+            "name": "blocks.1.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9999476700416369
+          },
+          {
+            "name": "blocks.1.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9997926308339746
+          },
+          {
+            "name": "blocks.1.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9997919172313836
+          },
+          {
+            "name": "blocks.2.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999999551302157
+          },
+          {
+            "name": "blocks.2.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9999482441632728
+          },
+          {
+            "name": "blocks.2.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 2,
+            "cos": 0.9999665175044076
+          },
+          {
+            "name": "blocks.2.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9999479763026868
+          },
+          {
+            "name": "blocks.2.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999503484826656
+          },
+          {
+            "name": "blocks.2.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999999550062983
+          },
+          {
+            "name": "blocks.2.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9999480923894727
+          },
+          {
+            "name": "blocks.2.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9999484815156578
+          },
+          {
+            "name": "blocks.2.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9997927821121376
+          },
+          {
+            "name": "blocks.2.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9997997374012866
+          },
+          {
+            "name": "blocks.3.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999999550051613
+          },
+          {
+            "name": "blocks.3.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.999948206994945
+          },
+          {
+            "name": "blocks.3.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 3,
+            "cos": 0.9999656646054103
+          },
+          {
+            "name": "blocks.3.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9999481959928621
+          },
+          {
+            "name": "blocks.3.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999483912084743
+          },
+          {
+            "name": "blocks.3.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999999551069023
+          },
+          {
+            "name": "blocks.3.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9999482381401043
+          },
+          {
+            "name": "blocks.3.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9999481057635906
+          },
+          {
+            "name": "blocks.3.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9997924059583695
+          },
+          {
+            "name": "blocks.3.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9997966693545287
+          },
+          {
+            "name": "ln_f.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999999589566163
+          },
+          {
+            "name": "ln_f.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "lm_head.weight",
+            "numel": 1572864,
+            "exact": 0,
+            "cos": 0.9999482746077225
+          }
+        ],
+        "detect_matches": 256,
+        "detect_profile": "RTX 4070 Ti SUPER",
+        "detect_seed": 424242,
+        "detect_conclusive": true,
+        "loss": 8.391648292541504
+      },
+      {
+        "step": 2,
+        "total": 10244352,
+        "exact": 1548288,
+        "exact_frac": 0.15113576729889797,
+        "cos": 0.9999069825832506,
+        "sigma": 234646.8951384651,
+        "per_tensor": [
+          {
+            "name": "tok_emb.weight",
+            "numel": 1572864,
+            "exact": 1548288,
+            "cos": 0.9999979941580096
+          },
+          {
+            "name": "blocks.0.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999998925398973
+          },
+          {
+            "name": "blocks.0.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9998716511976521
+          },
+          {
+            "name": "blocks.0.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9999096860223985
+          },
+          {
+            "name": "blocks.0.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9998720699342655
+          },
+          {
+            "name": "blocks.0.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9998779095388881
+          },
+          {
+            "name": "blocks.0.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999998909671668
+          },
+          {
+            "name": "blocks.0.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9998705843301903
+          },
+          {
+            "name": "blocks.0.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9998696309275086
+          },
+          {
+            "name": "blocks.0.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9994799936891146
+          },
+          {
+            "name": "blocks.0.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9994964362449466
+          },
+          {
+            "name": "blocks.1.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999998897222969
+          },
+          {
+            "name": "blocks.1.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.99986886913894
+          },
+          {
+            "name": "blocks.1.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9999112864180603
+          },
+          {
+            "name": "blocks.1.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9998691785756015
+          },
+          {
+            "name": "blocks.1.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9998645288634654
+          },
+          {
+            "name": "blocks.1.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999998858265293
+          },
+          {
+            "name": "blocks.1.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9998676038803658
+          },
+          {
+            "name": "blocks.1.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9998564973021666
+          },
+          {
+            "name": "blocks.1.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9994626853847143
+          },
+          {
+            "name": "blocks.1.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9994255726617783
+          },
+          {
+            "name": "blocks.2.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999998835089257
+          },
+          {
+            "name": "blocks.2.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.999868513289276
+          },
+          {
+            "name": "blocks.2.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9999082868769038
+          },
+          {
+            "name": "blocks.2.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9998674678562893
+          },
+          {
+            "name": "blocks.2.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9998503862979347
+          },
+          {
+            "name": "blocks.2.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999998829205872
+          },
+          {
+            "name": "blocks.2.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9998661375263325
+          },
+          {
+            "name": "blocks.2.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9998494894659932
+          },
+          {
+            "name": "blocks.2.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9994606273618877
+          },
+          {
+            "name": "blocks.2.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9993963268343591
+          },
+          {
+            "name": "blocks.3.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999998848916593
+          },
+          {
+            "name": "blocks.3.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9998665424913377
+          },
+          {
+            "name": "blocks.3.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9999026565465564
+          },
+          {
+            "name": "blocks.3.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.99986877269902
+          },
+          {
+            "name": "blocks.3.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9998424480960334
+          },
+          {
+            "name": "blocks.3.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999998901636309
+          },
+          {
+            "name": "blocks.3.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9998660107631229
+          },
+          {
+            "name": "blocks.3.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9998391323047511
+          },
+          {
+            "name": "blocks.3.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9994543758638497
+          },
+          {
+            "name": "blocks.3.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.99934694445684
+          },
+          {
+            "name": "ln_f.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.999999888581158
+          },
+          {
+            "name": "ln_f.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "lm_head.weight",
+            "numel": 1572864,
+            "exact": 0,
+            "cos": 0.9998636512946518
+          }
+        ],
+        "detect_matches": 256,
+        "detect_profile": "RTX 4070 Ti SUPER",
+        "detect_seed": 424242,
+        "detect_conclusive": true,
+        "loss": 8.353431010246275
+      },
+      {
+        "step": 5,
+        "total": 10244352,
+        "exact": 1548293,
+        "exact_frac": 0.1511362553727166,
+        "cos": 0.9996550375639817,
+        "sigma": 121822.90776304861,
+        "per_tensor": [
+          {
+            "name": "tok_emb.weight",
+            "numel": 1572864,
+            "exact": 1548288,
+            "cos": 0.9999933563376765
+          },
+          {
+            "name": "blocks.0.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999996465197176
+          },
+          {
+            "name": "blocks.0.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9995883939627648
+          },
+          {
+            "name": "blocks.0.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9996973171651031
+          },
+          {
+            "name": "blocks.0.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9995819645408279
+          },
+          {
+            "name": "blocks.0.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9995955070971638
+          },
+          {
+            "name": "blocks.0.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999996371442541
+          },
+          {
+            "name": "blocks.0.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9995773578712053
+          },
+          {
+            "name": "blocks.0.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9995559215458966
+          },
+          {
+            "name": "blocks.0.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9982921798838162
+          },
+          {
+            "name": "blocks.0.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9983428281067438
+          },
+          {
+            "name": "blocks.1.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999996244122556
+          },
+          {
+            "name": "blocks.1.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9995692585477075
+          },
+          {
+            "name": "blocks.1.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.999700238228316
+          },
+          {
+            "name": "blocks.1.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9995638122365895
+          },
+          {
+            "name": "blocks.1.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9995379353764599
+          },
+          {
+            "name": "blocks.1.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999996184524012
+          },
+          {
+            "name": "blocks.1.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9995537734752522
+          },
+          {
+            "name": "blocks.1.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9994913542486432
+          },
+          {
+            "name": "blocks.1.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9981797279067968
+          },
+          {
+            "name": "blocks.1.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.997977392978414
+          },
+          {
+            "name": "blocks.2.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999995912257741
+          },
+          {
+            "name": "blocks.2.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9995588702401365
+          },
+          {
+            "name": "blocks.2.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9996715181995051
+          },
+          {
+            "name": "blocks.2.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9995464291631879
+          },
+          {
+            "name": "blocks.2.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9994585437152055
+          },
+          {
+            "name": "blocks.2.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999995895640701
+          },
+          {
+            "name": "blocks.2.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 1,
+            "cos": 0.999529768756756
+          },
+          {
+            "name": "blocks.2.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.999431878483597
+          },
+          {
+            "name": "blocks.2.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.99812977213253
+          },
+          {
+            "name": "blocks.2.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9977713535447178
+          },
+          {
+            "name": "blocks.3.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999995958295217
+          },
+          {
+            "name": "blocks.3.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.999547428842695
+          },
+          {
+            "name": "blocks.3.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9996404770997263
+          },
+          {
+            "name": "blocks.3.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9995311535793738
+          },
+          {
+            "name": "blocks.3.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9993838377083939
+          },
+          {
+            "name": "blocks.3.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999996038997773
+          },
+          {
+            "name": "blocks.3.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 2,
+            "cos": 0.9995119582411269
+          },
+          {
+            "name": "blocks.3.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9993450168101256
+          },
+          {
+            "name": "blocks.3.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 1,
+            "cos": 0.9980220357914746
+          },
+          {
+            "name": "blocks.3.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9973488402468619
+          },
+          {
+            "name": "ln_f.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999995448721504
+          },
+          {
+            "name": "ln_f.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "lm_head.weight",
+            "numel": 1572864,
+            "exact": 1,
+            "cos": 0.9993161716285788
+          }
+        ],
+        "detect_matches": 256,
+        "detect_profile": "RTX 4070 Ti SUPER",
+        "detect_seed": 424242,
+        "detect_conclusive": true,
+        "loss": 8.15675085672438
+      },
+      {
+        "step": 10,
+        "total": 10244352,
+        "exact": 1548289,
+        "exact_frac": 0.15113586491366168,
+        "cos": 0.999066409062153,
+        "sigma": 74019.24977428149,
+        "per_tensor": [
+          {
+            "name": "tok_emb.weight",
+            "numel": 1572864,
+            "exact": 1548288,
+            "cos": 0.9999852235168206
+          },
+          {
+            "name": "blocks.0.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999992255443558
+          },
+          {
+            "name": "blocks.0.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9991037901332916
+          },
+          {
+            "name": "blocks.0.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9993292257580643
+          },
+          {
+            "name": "blocks.0.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.999077294664762
+          },
+          {
+            "name": "blocks.0.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9991258646421158
+          },
+          {
+            "name": "blocks.0.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999991871222275
+          },
+          {
+            "name": "blocks.0.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9990743602583907
+          },
+          {
+            "name": "blocks.0.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9989994478504338
+          },
+          {
+            "name": "blocks.0.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9962489261958699
+          },
+          {
+            "name": "blocks.0.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9963679238926051
+          },
+          {
+            "name": "blocks.1.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.999999155821886
+          },
+          {
+            "name": "blocks.1.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9990592667337362
+          },
+          {
+            "name": "blocks.1.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9993502279116855
+          },
+          {
+            "name": "blocks.1.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9990469210797979
+          },
+          {
+            "name": "blocks.1.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9989978684443125
+          },
+          {
+            "name": "blocks.1.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999991531898323
+          },
+          {
+            "name": "blocks.1.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9990175278324702
+          },
+          {
+            "name": "blocks.1.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9988668845160629
+          },
+          {
+            "name": "blocks.1.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9960171159060351
+          },
+          {
+            "name": "blocks.1.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9954999778307513
+          },
+          {
+            "name": "blocks.2.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999990901857774
+          },
+          {
+            "name": "blocks.2.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 1,
+            "cos": 0.9990283913287021
+          },
+          {
+            "name": "blocks.2.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9992660929312325
+          },
+          {
+            "name": "blocks.2.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9989880667624401
+          },
+          {
+            "name": "blocks.2.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9987975944434815
+          },
+          {
+            "name": "blocks.2.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999990848285597
+          },
+          {
+            "name": "blocks.2.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9989415594107751
+          },
+          {
+            "name": "blocks.2.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9987161156414996
+          },
+          {
+            "name": "blocks.2.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9958622590440054
+          },
+          {
+            "name": "blocks.2.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9950878638703413
+          },
+          {
+            "name": "blocks.3.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999990625720832
+          },
+          {
+            "name": "blocks.3.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9989965374984365
+          },
+          {
+            "name": "blocks.3.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.999193459960826
+          },
+          {
+            "name": "blocks.3.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9989387406082465
+          },
+          {
+            "name": "blocks.3.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9986101962460784
+          },
+          {
+            "name": "blocks.3.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999990694262655
+          },
+          {
+            "name": "blocks.3.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9988708120446943
+          },
+          {
+            "name": "blocks.3.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.998466770329827
+          },
+          {
+            "name": "blocks.3.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9955374495195713
+          },
+          {
+            "name": "blocks.3.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9940465321603636
+          },
+          {
+            "name": "ln_f.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999987261531014
+          },
+          {
+            "name": "ln_f.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "lm_head.weight",
+            "numel": 1572864,
+            "exact": 0,
+            "cos": 0.9971644897592802
+          }
+        ],
+        "detect_matches": 256,
+        "detect_profile": "RTX 4070 Ti SUPER",
+        "detect_seed": 424242,
+        "detect_conclusive": true,
+        "loss": 7.73146938999618
+      },
+      {
+        "step": 20,
+        "total": 10244352,
+        "exact": 1548290,
+        "exact_frac": 0.15113596252842543,
+        "cos": 0.9973306154178904,
+        "sigma": 43717.04954997768,
+        "per_tensor": [
+          {
+            "name": "tok_emb.weight",
+            "numel": 1572864,
+            "exact": 1548288,
+            "cos": 0.9999724761795513
+          },
+          {
+            "name": "blocks.0.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999985723892686
+          },
+          {
+            "name": "blocks.0.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 1,
+            "cos": 0.9983590950237055
+          },
+          {
+            "name": "blocks.0.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.998789972840537
+          },
+          {
+            "name": "blocks.0.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9982875626669386
+          },
+          {
+            "name": "blocks.0.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9984286206167613
+          },
+          {
+            "name": "blocks.0.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.999998516831724
+          },
+          {
+            "name": "blocks.0.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9983086234920582
+          },
+          {
+            "name": "blocks.0.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9981672171806334
+          },
+          {
+            "name": "blocks.0.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9931244640147749
+          },
+          {
+            "name": "blocks.0.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9934806415824474
+          },
+          {
+            "name": "blocks.1.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999983709886772
+          },
+          {
+            "name": "blocks.1.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9982825719426418
+          },
+          {
+            "name": "blocks.1.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.998814633414891
+          },
+          {
+            "name": "blocks.1.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9982005211236273
+          },
+          {
+            "name": "blocks.1.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9981558467456233
+          },
+          {
+            "name": "blocks.1.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999983868499643
+          },
+          {
+            "name": "blocks.1.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9982055490397245
+          },
+          {
+            "name": "blocks.1.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9979228374234093
+          },
+          {
+            "name": "blocks.1.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9926450871438873
+          },
+          {
+            "name": "blocks.1.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9916125618880738
+          },
+          {
+            "name": "blocks.2.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999982684385019
+          },
+          {
+            "name": "blocks.2.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9982339212420087
+          },
+          {
+            "name": "blocks.2.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.99866259008007
+          },
+          {
+            "name": "blocks.2.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9980505423071735
+          },
+          {
+            "name": "blocks.2.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.997717469409045
+          },
+          {
+            "name": "blocks.2.ln2.weight",
+            "numel": 384,
+            "exact": 1,
+            "cos": 0.9999982786902493
+          },
+          {
+            "name": "blocks.2.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9980407787418801
+          },
+          {
+            "name": "blocks.2.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9976556961120667
+          },
+          {
+            "name": "blocks.2.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9921830096757496
+          },
+          {
+            "name": "blocks.2.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9907080352673576
+          },
+          {
+            "name": "blocks.3.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999982367370127
+          },
+          {
+            "name": "blocks.3.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9981878430657183
+          },
+          {
+            "name": "blocks.3.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9985499295133929
+          },
+          {
+            "name": "blocks.3.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9979854410948942
+          },
+          {
+            "name": "blocks.3.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9973575635324611
+          },
+          {
+            "name": "blocks.3.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999982055776838
+          },
+          {
+            "name": "blocks.3.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9979307765706857
+          },
+          {
+            "name": "blocks.3.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9972429967607336
+          },
+          {
+            "name": "blocks.3.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9916388404642785
+          },
+          {
+            "name": "blocks.3.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9889816533590884
+          },
+          {
+            "name": "ln_f.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999969679361858
+          },
+          {
+            "name": "ln_f.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "lm_head.weight",
+            "numel": 1572864,
+            "exact": 0,
+            "cos": 0.9874521781714953
+          }
+        ],
+        "detect_matches": 256,
+        "detect_profile": "RTX 4070 Ti SUPER",
+        "detect_seed": 424242,
+        "detect_conclusive": true,
+        "loss": 6.7173385708743645
+      },
+      {
+        "step": 50,
+        "total": 10244352,
+        "exact": 1548289,
+        "exact_frac": 0.15113586491366168,
+        "cos": 0.991871424282762,
+        "sigma": 24949.37934855704,
+        "per_tensor": [
+          {
+            "name": "tok_emb.weight",
+            "numel": 1572864,
+            "exact": 1548288,
+            "cos": 0.9999600415524307
+          },
+          {
+            "name": "blocks.0.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999981336614827
+          },
+          {
+            "name": "blocks.0.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9974770205267542
+          },
+          {
+            "name": "blocks.0.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9984170919786985
+          },
+          {
+            "name": "blocks.0.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9973825136339575
+          },
+          {
+            "name": "blocks.0.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.99796362265226
+          },
+          {
+            "name": "blocks.0.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999978851859975
+          },
+          {
+            "name": "blocks.0.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9974080322424604
+          },
+          {
+            "name": "blocks.0.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9974099511896168
+          },
+          {
+            "name": "blocks.0.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9895935386663133
+          },
+          {
+            "name": "blocks.0.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9907806315566793
+          },
+          {
+            "name": "blocks.1.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999976346359558
+          },
+          {
+            "name": "blocks.1.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 1,
+            "cos": 0.9974608280729347
+          },
+          {
+            "name": "blocks.1.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9982990997310889
+          },
+          {
+            "name": "blocks.1.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9972001993312739
+          },
+          {
+            "name": "blocks.1.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9972822301592434
+          },
+          {
+            "name": "blocks.1.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999975390013323
+          },
+          {
+            "name": "blocks.1.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9973968171946904
+          },
+          {
+            "name": "blocks.1.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9970548857780004
+          },
+          {
+            "name": "blocks.1.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9889347003495507
+          },
+          {
+            "name": "blocks.1.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.987539126259979
+          },
+          {
+            "name": "blocks.2.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999973629384621
+          },
+          {
+            "name": "blocks.2.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9974349098782468
+          },
+          {
+            "name": "blocks.2.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9980723647406732
+          },
+          {
+            "name": "blocks.2.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9969162664308727
+          },
+          {
+            "name": "blocks.2.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9965283896172935
+          },
+          {
+            "name": "blocks.2.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.999997292316263
+          },
+          {
+            "name": "blocks.2.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9971331354356309
+          },
+          {
+            "name": "blocks.2.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9966583160478575
+          },
+          {
+            "name": "blocks.2.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9878705926982041
+          },
+          {
+            "name": "blocks.2.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9858272782833855
+          },
+          {
+            "name": "blocks.3.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999973800226474
+          },
+          {
+            "name": "blocks.3.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9973748267865076
+          },
+          {
+            "name": "blocks.3.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9979051211983014
+          },
+          {
+            "name": "blocks.3.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9967718981084682
+          },
+          {
+            "name": "blocks.3.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9958939463665605
+          },
+          {
+            "name": "blocks.3.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999971801411942
+          },
+          {
+            "name": "blocks.3.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9970360953137507
+          },
+          {
+            "name": "blocks.3.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.996194671110487
+          },
+          {
+            "name": "blocks.3.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.98692881842806
+          },
+          {
+            "name": "blocks.3.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9832456847725308
+          },
+          {
+            "name": "ln_f.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999939818171409
+          },
+          {
+            "name": "ln_f.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "lm_head.weight",
+            "numel": 1572864,
+            "exact": 0,
+            "cos": 0.9513923066445784
+          }
+        ],
+        "detect_matches": 256,
+        "detect_profile": "RTX 4070 Ti SUPER",
+        "detect_seed": 424242,
+        "detect_conclusive": true,
+        "loss": 4.779043061644479
+      },
+      {
+        "step": 100,
+        "total": 10244352,
+        "exact": 1548289,
+        "exact_frac": 0.15113586491366168,
+        "cos": 0.9882529507183047,
+        "sigma": 20697.131207005925,
+        "per_tensor": [
+          {
+            "name": "tok_emb.weight",
+            "numel": 1572864,
+            "exact": 1548288,
+            "cos": 0.9999119556934916
+          },
+          {
+            "name": "blocks.0.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999962821292118
+          },
+          {
+            "name": "blocks.0.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9955812729460394
+          },
+          {
+            "name": "blocks.0.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9973329028962346
+          },
+          {
+            "name": "blocks.0.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9948920357511051
+          },
+          {
+            "name": "blocks.0.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9985864249818481
+          },
+          {
+            "name": "blocks.0.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999954784953771
+          },
+          {
+            "name": "blocks.0.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9953747079948182
+          },
+          {
+            "name": "blocks.0.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9973863045812695
+          },
+          {
+            "name": "blocks.0.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 1,
+            "cos": 0.9840130888126131
+          },
+          {
+            "name": "blocks.0.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.990364704371763
+          },
+          {
+            "name": "blocks.1.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999969618317709
+          },
+          {
+            "name": "blocks.1.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9961199397303622
+          },
+          {
+            "name": "blocks.1.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9974839236122712
+          },
+          {
+            "name": "blocks.1.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9960894390293862
+          },
+          {
+            "name": "blocks.1.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9963311055084927
+          },
+          {
+            "name": "blocks.1.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999970289160951
+          },
+          {
+            "name": "blocks.1.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9970333119642794
+          },
+          {
+            "name": "blocks.1.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9968123702939161
+          },
+          {
+            "name": "blocks.1.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.986831483474232
+          },
+          {
+            "name": "blocks.1.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9825945499121074
+          },
+          {
+            "name": "blocks.2.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999971448972806
+          },
+          {
+            "name": "blocks.2.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9970963569786799
+          },
+          {
+            "name": "blocks.2.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9975197396257115
+          },
+          {
+            "name": "blocks.2.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9963417344154427
+          },
+          {
+            "name": "blocks.2.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9954534256753788
+          },
+          {
+            "name": "blocks.2.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999971518937981
+          },
+          {
+            "name": "blocks.2.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9970807054538106
+          },
+          {
+            "name": "blocks.2.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9965722423178418
+          },
+          {
+            "name": "blocks.2.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9863552482736248
+          },
+          {
+            "name": "blocks.2.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9824040821865778
+          },
+          {
+            "name": "blocks.3.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.999997176406868
+          },
+          {
+            "name": "blocks.3.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9971915216416333
+          },
+          {
+            "name": "blocks.3.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9976305730015343
+          },
+          {
+            "name": "blocks.3.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9962661973572979
+          },
+          {
+            "name": "blocks.3.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9951479889818163
+          },
+          {
+            "name": "blocks.3.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999971098988832
+          },
+          {
+            "name": "blocks.3.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9970841608280452
+          },
+          {
+            "name": "blocks.3.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9962483506198847
+          },
+          {
+            "name": "blocks.3.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.985616639938063
+          },
+          {
+            "name": "blocks.3.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9812139463827013
+          },
+          {
+            "name": "ln_f.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999918721020674
+          },
+          {
+            "name": "ln_f.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "lm_head.weight",
+            "numel": 1572864,
+            "exact": 0,
+            "cos": 0.9297761387308219
+          }
+        ],
+        "detect_matches": 256,
+        "detect_profile": "RTX 4070 Ti SUPER",
+        "detect_seed": 424242,
+        "detect_conclusive": true,
+        "loss": 4.206327975978881
+      },
+      {
+        "step": 200,
+        "total": 10244352,
+        "exact": 1548291,
+        "exact_frac": 0.15113606014318914,
+        "cos": 0.973867395689415,
+        "sigma": 13724.348564152864,
+        "per_tensor": [
+          {
+            "name": "tok_emb.weight",
+            "numel": 1572864,
+            "exact": 1548288,
+            "cos": 0.9998367750905602
+          },
+          {
+            "name": "blocks.0.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999943678953453
+          },
+          {
+            "name": "blocks.0.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 1,
+            "cos": 0.9920788514705455
+          },
+          {
+            "name": "blocks.0.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9962282308480516
+          },
+          {
+            "name": "blocks.0.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9922670783547132
+          },
+          {
+            "name": "blocks.0.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9969312289764531
+          },
+          {
+            "name": "blocks.0.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999938564181895
+          },
+          {
+            "name": "blocks.0.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9915623144653258
+          },
+          {
+            "name": "blocks.0.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9945961068236424
+          },
+          {
+            "name": "blocks.0.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.968615641067763
+          },
+          {
+            "name": "blocks.0.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9757776035738154
+          },
+          {
+            "name": "blocks.1.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999914535687199
+          },
+          {
+            "name": "blocks.1.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9865853884060578
+          },
+          {
+            "name": "blocks.1.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9854682075951328
+          },
+          {
+            "name": "blocks.1.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9913125095730249
+          },
+          {
+            "name": "blocks.1.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9905809943248874
+          },
+          {
+            "name": "blocks.1.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999932757781229
+          },
+          {
+            "name": "blocks.1.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 1,
+            "cos": 0.9933422796291954
+          },
+          {
+            "name": "blocks.1.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9913500092913686
+          },
+          {
+            "name": "blocks.1.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9725571795083953
+          },
+          {
+            "name": "blocks.1.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9578990256247721
+          },
+          {
+            "name": "blocks.2.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999949204265397
+          },
+          {
+            "name": "blocks.2.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9920128264574346
+          },
+          {
+            "name": "blocks.2.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9936834819785088
+          },
+          {
+            "name": "blocks.2.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9932102086400005
+          },
+          {
+            "name": "blocks.2.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9901140422586421
+          },
+          {
+            "name": "blocks.2.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999937419926541
+          },
+          {
+            "name": "blocks.2.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 1,
+            "cos": 0.9945420728440462
+          },
+          {
+            "name": "blocks.2.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9925569300756375
+          },
+          {
+            "name": "blocks.2.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9761376498527294
+          },
+          {
+            "name": "blocks.2.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9664872003249168
+          },
+          {
+            "name": "blocks.3.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999956577681365
+          },
+          {
+            "name": "blocks.3.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9943797298903355
+          },
+          {
+            "name": "blocks.3.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9955641891302878
+          },
+          {
+            "name": "blocks.3.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9935089922034139
+          },
+          {
+            "name": "blocks.3.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9916263895507501
+          },
+          {
+            "name": "blocks.3.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999942823333974
+          },
+          {
+            "name": "blocks.3.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9948932038360093
+          },
+          {
+            "name": "blocks.3.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9924030459657006
+          },
+          {
+            "name": "blocks.3.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9775950367371933
+          },
+          {
+            "name": "blocks.3.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9716201349138567
+          },
+          {
+            "name": "ln_f.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999885357691568
+          },
+          {
+            "name": "ln_f.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "lm_head.weight",
+            "numel": 1572864,
+            "exact": 0,
+            "cos": 0.8562331275347894
+          }
+        ],
+        "detect_matches": 256,
+        "detect_profile": "RTX 4070 Ti SUPER",
+        "detect_seed": 424242,
+        "detect_conclusive": true,
+        "loss": 4.071924903629155
+      },
+      {
+        "step": 400,
+        "total": 10244352,
+        "exact": 1548289,
+        "exact_frac": 0.15113586491366168,
+        "cos": 0.8893435812366269,
+        "sigma": 6225.411227269706,
+        "per_tensor": [
+          {
+            "name": "tok_emb.weight",
+            "numel": 1572864,
+            "exact": 1548288,
+            "cos": 0.9997606090715496
+          },
+          {
+            "name": "blocks.0.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999906507281576
+          },
+          {
+            "name": "blocks.0.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9812308090118209
+          },
+          {
+            "name": "blocks.0.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9937430592776022
+          },
+          {
+            "name": "blocks.0.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.987927283146343
+          },
+          {
+            "name": "blocks.0.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9911032769108022
+          },
+          {
+            "name": "blocks.0.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999905813018694
+          },
+          {
+            "name": "blocks.0.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9865783136420897
+          },
+          {
+            "name": "blocks.0.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9866523220773052
+          },
+          {
+            "name": "blocks.0.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9452503194681786
+          },
+          {
+            "name": "blocks.0.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9566901579331857
+          },
+          {
+            "name": "blocks.1.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.999986872741341
+          },
+          {
+            "name": "blocks.1.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9700903111239797
+          },
+          {
+            "name": "blocks.1.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.971804563359465
+          },
+          {
+            "name": "blocks.1.attn.proj.weight",
+            "numel": 147456,
+            "exact": 1,
+            "cos": 0.9819372689236109
+          },
+          {
+            "name": "blocks.1.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9870182083341261
+          },
+          {
+            "name": "blocks.1.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999768986537213
+          },
+          {
+            "name": "blocks.1.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9820741859153154
+          },
+          {
+            "name": "blocks.1.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9850772865652296
+          },
+          {
+            "name": "blocks.1.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.946315140036392
+          },
+          {
+            "name": "blocks.1.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9433838322865512
+          },
+          {
+            "name": "blocks.2.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.99998857685547
+          },
+          {
+            "name": "blocks.2.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9843350039469562
+          },
+          {
+            "name": "blocks.2.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9865053631854205
+          },
+          {
+            "name": "blocks.2.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9849079928818211
+          },
+          {
+            "name": "blocks.2.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9860364499597787
+          },
+          {
+            "name": "blocks.2.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999861509029818
+          },
+          {
+            "name": "blocks.2.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9859938535811562
+          },
+          {
+            "name": "blocks.2.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.984156452115295
+          },
+          {
+            "name": "blocks.2.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9531366157748401
+          },
+          {
+            "name": "blocks.2.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.951239883586627
+          },
+          {
+            "name": "blocks.3.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999893438207011
+          },
+          {
+            "name": "blocks.3.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9858024204873466
+          },
+          {
+            "name": "blocks.3.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9921618261439963
+          },
+          {
+            "name": "blocks.3.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9868929877211915
+          },
+          {
+            "name": "blocks.3.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9868323165635713
+          },
+          {
+            "name": "blocks.3.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999872802022475
+          },
+          {
+            "name": "blocks.3.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9850119444020586
+          },
+          {
+            "name": "blocks.3.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9797045121244897
+          },
+          {
+            "name": "blocks.3.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9600951355961798
+          },
+          {
+            "name": "blocks.3.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9589865979119301
+          },
+          {
+            "name": "ln_f.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999841064317545
+          },
+          {
+            "name": "ln_f.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "lm_head.weight",
+            "numel": 1572864,
+            "exact": 0,
+            "cos": 0.5795234114782793
+          }
+        ],
+        "detect_matches": 256,
+        "detect_profile": "RTX 4070 Ti SUPER",
+        "detect_seed": 424242,
+        "detect_conclusive": true,
+        "loss": 3.9281490369751215
+      },
+      {
+        "step": 600,
+        "total": 10244352,
+        "exact": 1548289,
+        "exact_frac": 0.15113586491366168,
+        "cos": 0.810042896015425,
+        "sigma": 4421.585836008103,
+        "per_tensor": [
+          {
+            "name": "tok_emb.weight",
+            "numel": 1572864,
+            "exact": 1548288,
+            "cos": 0.9996889993668793
+          },
+          {
+            "name": "blocks.0.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999874499479122
+          },
+          {
+            "name": "blocks.0.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9749459144209246
+          },
+          {
+            "name": "blocks.0.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9910303456889507
+          },
+          {
+            "name": "blocks.0.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9835819780765431
+          },
+          {
+            "name": "blocks.0.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9866568852962353
+          },
+          {
+            "name": "blocks.0.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999872700355176
+          },
+          {
+            "name": "blocks.0.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.0.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9822550430613783
+          },
+          {
+            "name": "blocks.0.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9803210379855787
+          },
+          {
+            "name": "blocks.0.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9252453595403286
+          },
+          {
+            "name": "blocks.0.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9415379934096912
+          },
+          {
+            "name": "blocks.1.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999759971848972
+          },
+          {
+            "name": "blocks.1.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9576044045871008
+          },
+          {
+            "name": "blocks.1.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9569594157300134
+          },
+          {
+            "name": "blocks.1.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9744990338626667
+          },
+          {
+            "name": "blocks.1.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9845253023586569
+          },
+          {
+            "name": "blocks.1.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.99996677182685
+          },
+          {
+            "name": "blocks.1.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.1.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 1,
+            "cos": 0.9722578207689885
+          },
+          {
+            "name": "blocks.1.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9792990517540456
+          },
+          {
+            "name": "blocks.1.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9256877855770924
+          },
+          {
+            "name": "blocks.1.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9269663629304958
+          },
+          {
+            "name": "blocks.2.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999836651603417
+          },
+          {
+            "name": "blocks.2.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9787456525936016
+          },
+          {
+            "name": "blocks.2.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9819018902559924
+          },
+          {
+            "name": "blocks.2.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9776761675347366
+          },
+          {
+            "name": "blocks.2.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9827497511108473
+          },
+          {
+            "name": "blocks.2.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999762416666087
+          },
+          {
+            "name": "blocks.2.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.2.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9776357639062481
+          },
+          {
+            "name": "blocks.2.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9783066505496625
+          },
+          {
+            "name": "blocks.2.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9337121125216531
+          },
+          {
+            "name": "blocks.2.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9379939280134932
+          },
+          {
+            "name": "blocks.3.ln1.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999810323258707
+          },
+          {
+            "name": "blocks.3.ln1.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.attn.qkv.weight",
+            "numel": 442368,
+            "exact": 0,
+            "cos": 0.9799054711301671
+          },
+          {
+            "name": "blocks.3.attn.qkv.bias",
+            "numel": 1152,
+            "exact": 0,
+            "cos": 0.9907957523898676
+          },
+          {
+            "name": "blocks.3.attn.proj.weight",
+            "numel": 147456,
+            "exact": 0,
+            "cos": 0.9800237439314522
+          },
+          {
+            "name": "blocks.3.attn.proj.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.983500144342285
+          },
+          {
+            "name": "blocks.3.ln2.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999764487269095
+          },
+          {
+            "name": "blocks.3.ln2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "blocks.3.mlp.fc1.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9723392489308239
+          },
+          {
+            "name": "blocks.3.mlp.fc1.bias",
+            "numel": 1536,
+            "exact": 0,
+            "cos": 0.9633388439068621
+          },
+          {
+            "name": "blocks.3.mlp.fc2.weight",
+            "numel": 589824,
+            "exact": 0,
+            "cos": 0.9432150263519705
+          },
+          {
+            "name": "blocks.3.mlp.fc2.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9505714356944754
+          },
+          {
+            "name": "ln_f.weight",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.9999815882168152
+          },
+          {
+            "name": "ln_f.bias",
+            "numel": 384,
+            "exact": 0,
+            "cos": 0.0
+          },
+          {
+            "name": "lm_head.weight",
+            "numel": 1572864,
+            "exact": 0,
+            "cos": 0.441769335518587
+          }
+        ],
+        "detect_matches": 256,
+        "detect_profile": "RTX 4070 Ti SUPER",
+        "detect_seed": 424242,
+        "detect_conclusive": true,
+        "loss": 3.882328293278192
+      }
+    ],
+    "seconds": 16.975940942764282
+  }
+}

@@ -1026,7 +1026,10 @@ async function openViewer(link) {
     if (type === 'report') {
       const md = await fetchText(src);
       const marked = await getMarked();
-      const html = marked.parse(md, { gfm: true, breaks: false });
+      let html = marked.parse(md, { gfm: true, breaks: false });
+      // rewrite relative image sources before insertion so the browser never
+      // requests them against /site/ (which would 404 before fixReportLinks runs)
+      html = html.replace(/(<img\b[^>]*?\bsrc=")(?!https?:|data:|\/|\.\.\/)([^"]+)/g, '$1../$2');
       if (token !== viewerToken) return;
       modalBody.innerHTML = `<article class="md">${html}</article>`;
       fixReportLinks(modalBody);

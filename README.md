@@ -1,5 +1,7 @@
 # The Blackwell "weight fingerprint", audited
 
+**Live: https://tespio.github.io/conclusive-vibes/**
+
 A runnable proof that the *checkpoint forensics* claim — "Chinese labs initialised
 their models on export-controlled NVIDIA Blackwell GPUs, as proven by the weights" —
 identifies a **software launch configuration**, not hardware.

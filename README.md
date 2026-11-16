@@ -6,6 +6,10 @@ A runnable proof that the *checkpoint forensics* claim — "Chinese labs initial
 their models on export-controlled NVIDIA Blackwell GPUs, as proven by the weights" —
 identifies a **software launch configuration**, not hardware.
 
+**The published repo:** the audit of his `checkpoint-forensics` code — the Kimi offset bug,
+the missing bit-equality test, and his own note that the method doesn't say where training
+happened — is in [REBUTTAL.md](REBUTTAL.md), and in exhibit 06 of the site.
+
 **Headline result:** a checkpoint generated on a laptop CPU, with no GPU in the
 loop, is certified by the claimed method as **GB200, 256/256 values bit-identical,
 "conclusive"**. A single optimizer step then destroys that fingerprint for 88% of

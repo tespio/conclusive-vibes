@@ -41,7 +41,7 @@
       <span class="hud__label">BLACKWELLS&nbsp;REQUIRED</span>
       <span class="hud__digits" id="counterDigits">0000</span>
     </div>
-    <div class="hud__idx"><b id="idxNum">00</b><span>&nbsp;/&nbsp;06</span></div>
+    <div class="hud__idx"><b id="idxNum">00</b><span>&nbsp;/&nbsp;07</span></div>
   </div>
 </header>
 
@@ -52,7 +52,7 @@
   <!-- ============================================================ 00 HERO -->
   <section class="section section--hero" id="s-hero" data-scene="hero" data-label="Opening">
     <div class="hero">
-      <div class="kicker">An interactive audit · six exhibits</div>
+      <div class="kicker">An interactive audit · seven exhibits</div>
       <h1>The fingerprint<br/>that fits on a <em>laptop.</em></h1>
       <p class="lede">A working reproduction of the “1,385σ Blackwell” checkpoint-forensics claim —
         and the three places where it stops being evidence. Every number on this page was produced
@@ -242,10 +242,49 @@
     </div>
   </section>
 
-  <!-- ============================================================== 06 OUTRO -->
+  <!-- =============================================================== 06 CODE -->
+  <section class="section" id="s-repo" data-scene="cost" data-label="His code">
+    <div class="panel panel--wide">
+      <div class="kicker">06 · The code</div>
+      <h2>He published the method. We ran it.</h2>
+      <p>It reproduces his entire table on this machine — every seed, every SM count, every
+        median r. The Philox kernel is real, the rows are pinned Hugging Face weights, the
+        licence is MIT.</p>
+      <p>Then his own README narrows the claim to the initialization:</p>
+      <blockquote>“This is the GPU that created the starting weights. It doesn't say where the
+        training happened after that.”
+        <cite>checkpoint-forensics · Notes</cite>
+      </blockquote>
+      <table class="claimtable">
+        <thead><tr><th>the claim</th><th>what the code does</th></tr></thead>
+        <tbody>
+          <tr><td>“GB200 13/13”</td>
+            <td><code>gpu_check.py</code> ignores Kimi's <code>cpu_offset=3776</code>; at
+              offset 0 the same rows score <b>r = −0.008</b>. The advertised GPU check cannot
+              produce the advertised result.</td></tr>
+          <tr><td>“bit for bit”</td>
+            <td>Counts <code>r &gt; 0.99</code>. No equality test exists in the repo. For V4,
+              rows are stored bf16 while <code>gen()</code> makes float32 — bit-exact is
+              impossible on that path.</td></tr>
+          <tr><td>“brute-forced 2³²”</td>
+            <td>No search code in the repo. The seeds are given; the Kimi offset is
+              undocumented.</td></tr>
+          <tr><td>“GPU fingerprint”</td>
+            <td><code>replay.py</code> regenerates it on a laptop in seconds, from embedding
+              rows for tokens that never trained.</td></tr>
+        </tbody>
+      </table>
+      <p class="small">And 152 SMs is GB200, GB300 — and, per his own notes, an AMD MI300X in
+        two-way partition mode. A class, not a part.</p>
+      <p class="btnrow"><a class="btn" href="../REBUTTAL.md" data-view="report"
+        data-title="We ran the checkpoint-forensics repo">read the full rebuttal</a></p>
+    </div>
+  </section>
+
+  <!-- ============================================================== 07 OUTRO -->
   <section class="section section--outro" id="s-outro" data-scene="outro" data-label="The point">
     <div class="outro">
-      <div class="kicker">06 · The point</div>
+      <div class="kicker">07 · The point</div>
       <h2>A PRNG can be made<br/>to say <em>anything.</em></h2>
       <p>Every number on this page came from the audit code in
         <a href="../poc/run_all.py" data-view="code" data-title="poc/run_all.py">poc/</a>, running on the test

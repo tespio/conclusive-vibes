@@ -33,6 +33,7 @@ def main() -> None:
 
     copy_file(ROOT / "index.html", OUT / "index.html")
     copy_file(ROOT / "REPORT.md", OUT / "REPORT.md")
+    copy_file(ROOT / "REBUTTAL.md", OUT / "REBUTTAL.md")
     shutil.copytree(ROOT / "site", OUT / "site")
     copy_file(ROOT / "figures" / "fig1_audit.png", OUT / "figures" / "fig1_audit.png")
 
